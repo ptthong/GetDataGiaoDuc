@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="55c17401-7b79-4318-86f6-9ba4ab5fd96f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://qlttgddt.thuathienhue.edu.vn/GiaoDuc.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GiaoDuc.xsd" MetadataType="Schema" ID="d5a571e4-ef3f-4d92-89f9-dbeb3ae07ee6" SourceId="1" SourceUrl="http://qlttgddt.thuathienhue.edu.vn/GiaoDuc.svc?xsd=xsd1" />
+    <MetadataFile FileName="GiaoDuc1.xsd" MetadataType="Schema" ID="f6101ed7-0b1d-485f-9726-3652207840a6" SourceId="1" SourceUrl="http://qlttgddt.thuathienhue.edu.vn/GiaoDuc.svc?xsd=xsd3" />
+    <MetadataFile FileName="GiaoDuc2.xsd" MetadataType="Schema" ID="0489acf0-6775-49c2-b0f0-ee84e464cbc1" SourceId="1" SourceUrl="http://qlttgddt.thuathienhue.edu.vn/GiaoDuc.svc?xsd=xsd4" />
+    <MetadataFile FileName="GiaoDuc3.xsd" MetadataType="Schema" ID="47e62639-a750-4b13-8d23-e1124fd9618d" SourceId="1" SourceUrl="http://qlttgddt.thuathienhue.edu.vn/GiaoDuc.svc?xsd=xsd0" />
+    <MetadataFile FileName="GiaoDuc4.xsd" MetadataType="Schema" ID="0e347ab0-5f7f-4bc6-832e-e30cb796ab69" SourceId="1" SourceUrl="http://qlttgddt.thuathienhue.edu.vn/GiaoDuc.svc?xsd=xsd2" />
+    <MetadataFile FileName="GiaoDuc.wsdl" MetadataType="Wsdl" ID="7f25ef9c-950f-470c-a98f-5ee6777341fe" SourceId="1" SourceUrl="http://qlttgddt.thuathienhue.edu.vn/GiaoDuc.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

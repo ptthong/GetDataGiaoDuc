@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfSchoolProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SchoolProfile" nillable="true" type="tns:SchoolProfile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSchoolProfile" nillable="true" type="tns:ArrayOfSchoolProfile" />
+  <xs:complexType name="SchoolProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Commune" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="District" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EducationGrade" type="xs:int" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstablishedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HeadMasterName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HeadMasterPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SchoolCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SchoolName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SchoolProfileID" type="xs:int" />
+      <xs:element minOccurs="0" name="SchoolTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="SupervisingDept" type="xs:int" />
+      <xs:element minOccurs="0" name="SynchronizeId" type="xs:int" />
+      <xs:element minOccurs="0" name="Telephone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrainingTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="UpdateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Website" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SchoolProfile" nillable="true" type="tns:SchoolProfile" />
+  <xs:complexType name="ResultBO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultBO" nillable="true" type="tns:ResultBO" />
+  <xs:complexType name="ArrayOfSubject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Subject" nillable="true" type="tns:Subject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubject" nillable="true" type="tns:ArrayOfSubject" />
+  <xs:complexType name="Subject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Abbreviation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AppLevel" type="xs:int" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubjectId" type="xs:int" />
+      <xs:element minOccurs="0" name="SubjectName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Subject" nillable="true" type="tns:Subject" />
+  <xs:complexType name="ArrayOfClassProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClassProfile" nillable="true" type="tns:ClassProfile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClassProfile" nillable="true" type="tns:ArrayOfClassProfile" />
+  <xs:complexType name="ClassProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClassName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClassProfileId" type="xs:int" />
+      <xs:element minOccurs="0" name="EducationLevelID" type="xs:int" />
+      <xs:element minOccurs="0" name="HeadTeacherID" type="xs:int" />
+      <xs:element minOccurs="0" name="IsSpecializedClass" type="xs:int" />
+      <xs:element minOccurs="0" name="Section" type="xs:int" />
+      <xs:element minOccurs="0" name="SynchronizeId" type="xs:int" />
+      <xs:element minOccurs="0" name="UpdateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Year" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClassProfile" nillable="true" type="tns:ClassProfile" />
+  <xs:complexType name="ArrayOfPupilProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PupilProfile" nillable="true" type="tns:PupilProfile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPupilProfile" nillable="true" type="tns:ArrayOfPupilProfile" />
+  <xs:complexType name="PupilProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="BirthPlace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BloodType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClassID" type="xs:int" />
+      <xs:element minOccurs="0" name="Commune" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CommunistPartyJoinedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CommunistPartyJoinedPlace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisabledSeverity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisabledTypeID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="District" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EnrolmentDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ethnic" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FamilyTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="FatherBirthDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FatherFullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FatherJob" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FatherMobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ForeignLanguageTraining" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Genre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HomeTown" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Image" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsCommunistPartyMember" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsDisabled" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsResidentIn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsSupportForLearning" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsYoungPioneerMember" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsYouthLeageMember" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MotherBirthDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MotherFullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MotherJob" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MotherMobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderId" type="xs:int" />
+      <xs:element minOccurs="0" name="PermanentResidentalAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PolicyRegimeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PolicyTargetID" type="xs:int" />
+      <xs:element minOccurs="0" name="PreviousGraduationLevel" type="xs:int" />
+      <xs:element minOccurs="0" name="PriorityTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="ProfileStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PupilCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PupilProfileId" type="xs:int" />
+      <xs:element minOccurs="0" name="Religion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SponsorBirthDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SponsorFullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SponsorJob" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SponsorMobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SynchronizeId" type="xs:int" />
+      <xs:element minOccurs="0" name="Telephone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TempResidentalAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="YoungPioneerJoinedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YoungPioneerJoinedPlace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YouthLeagueJoinedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YouthLeagueJoinedPlace" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PupilProfile" nillable="true" type="tns:PupilProfile" />
+  <xs:complexType name="ArrayOfPupilMark">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PupilMark" nillable="true" type="tns:PupilMark" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPupilMark" nillable="true" type="tns:ArrayOfPupilMark" />
+  <xs:complexType name="PupilMark">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClassId" type="xs:int" />
+      <xs:element minOccurs="0" name="JudgeRecord" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mark" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MarkId" type="xs:double" />
+      <xs:element minOccurs="0" name="MarkTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="PupilId" type="xs:int" />
+      <xs:element minOccurs="0" name="ReJudgeRecord" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReMark" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Section" type="xs:int" />
+      <xs:element minOccurs="0" name="Semester" type="xs:int" />
+      <xs:element minOccurs="0" name="SubjectId" type="xs:int" />
+      <xs:element minOccurs="0" name="SynchronizeId" type="xs:int" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PupilMark" nillable="true" type="tns:PupilMark" />
+  <xs:complexType name="ArrayOfEmployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Employee" nillable="true" type="tns:Employee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmployee" nillable="true" type="tns:ArrayOfEmployee" />
+  <xs:complexType name="Employee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AppliedLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="BirthPlace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CommunistPartyJoinedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CommunistPartyJoinedPlace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContractTypeID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DedicatedForYoungLeague" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EducationalManagementGrade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeID" type="xs:int" />
+      <xs:element minOccurs="0" name="EmployeeType" type="xs:int" />
+      <xs:element minOccurs="0" name="EmploymentStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Ethnic" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FamilyTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="FatherBirthDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FatherFullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FatherJob" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FatherWorkingPlace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ForeignLanguageGrade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Genre" type="xs:int" />
+      <xs:element minOccurs="0" name="GraduationLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HealthStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HomeTown" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ITQualificationLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdentityIssuedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdentityIssuedPlace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdentityNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Image" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IntoSchoolDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsCommunistPartyMember" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsYouthLeageMember" type="xs:int" />
+      <xs:element minOccurs="0" name="JoinedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MariageStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MotherBirthDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MotherFullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MotherJob" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MotherWorkingPlace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PermanentResidentalAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PoliticalGrade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QualificationLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QualificationTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="RegularRefresher" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Religion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SchoolFaculty" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpecialityCat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpouseBirthDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpouseFullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpouseJob" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpouseWorkingPlace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StaffPosition" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartingDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateManagementGrade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SynchronizeId" type="xs:int" />
+      <xs:element minOccurs="0" name="Telephone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TempResidentalAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrainingLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WorkType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YouthLeagueJoinedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YouthLeagueJoinedPlace" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Employee" nillable="true" type="tns:Employee" />
+  <xs:complexType name="ArrayOfPupilRank">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PupilRank" nillable="true" type="tns:PupilRank" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPupilRank" nillable="true" type="tns:ArrayOfPupilRank" />
+  <xs:complexType name="PupilRank">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AverageMark" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CapacityLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClassID" type="xs:int" />
+      <xs:element minOccurs="0" name="ConductLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Emulation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PupilID" type="xs:int" />
+      <xs:element minOccurs="0" name="PupilRankingId" type="xs:int" />
+      <xs:element minOccurs="0" name="Rank" type="xs:int" />
+      <xs:element minOccurs="0" name="Semester" type="xs:int" />
+      <xs:element minOccurs="0" name="StudyingJudgementID" type="xs:int" />
+      <xs:element minOccurs="0" name="SynchronizeId" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalAbsentDaysWithPermission" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalAbsentDaysWithoutPermission" type="xs:int" />
+      <xs:element minOccurs="0" name="UpdateTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PupilRank" nillable="true" type="tns:PupilRank" />
+  <xs:complexType name="ArrayOfPupilAbsence">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PupilAbsence" nillable="true" type="tns:PupilAbsence" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPupilAbsence" nillable="true" type="tns:ArrayOfPupilAbsence" />
+  <xs:complexType name="PupilAbsence">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AbsentDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Accepted" type="xs:int" />
+      <xs:element minOccurs="0" name="ClassID" type="xs:int" />
+      <xs:element minOccurs="0" name="PupilAbsenceId" type="xs:int" />
+      <xs:element minOccurs="0" name="PupilID" type="xs:int" />
+      <xs:element minOccurs="0" name="Section" type="xs:int" />
+      <xs:element minOccurs="0" name="SynchronizeId" type="xs:int" />
+      <xs:element minOccurs="0" name="UpdateTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PupilAbsence" nillable="true" type="tns:PupilAbsence" />
+  <xs:complexType name="ArrayOfClassSubject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClassSubject" nillable="true" type="tns:ClassSubject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClassSubject" nillable="true" type="tns:ArrayOfClassSubject" />
+  <xs:complexType name="ClassSubject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClassID" type="xs:int" />
+      <xs:element minOccurs="0" name="Coefficient" type="xs:int" />
+      <xs:element minOccurs="0" name="IsCommenting" type="xs:int" />
+      <xs:element minOccurs="0" name="IsSpecializedSubject" type="xs:int" />
+      <xs:element minOccurs="0" name="SectionPerWeekFirstSemester" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SectionPerWeekSecondSemester" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SubjectId" type="xs:int" />
+      <xs:element minOccurs="0" name="SynchronizeId" type="xs:int" />
+      <xs:element minOccurs="0" name="UpdateTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClassSubject" nillable="true" type="tns:ClassSubject" />
+</xs:schema>

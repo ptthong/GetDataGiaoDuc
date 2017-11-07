@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfTenTruong">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TenTruong" nillable="true" type="tns:TenTruong" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTenTruong" nillable="true" type="tns:ArrayOfTenTruong" />
+  <xs:complexType name="TenTruong">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MaTruong" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TenDonVi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TenTruong" nillable="true" type="tns:TenTruong" />
+  <xs:complexType name="ArrayOfLopHoc">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LopHoc" nillable="true" type="tns:LopHoc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLopHoc" nillable="true" type="tns:ArrayOfLopHoc" />
+  <xs:complexType name="LopHoc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LopId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TenLop" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LopHoc" nillable="true" type="tns:LopHoc" />
+  <xs:complexType name="ArrayOfHocSinh">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HocSinh" nillable="true" type="tns:HocSinh" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHocSinh" nillable="true" type="tns:ArrayOfHocSinh" />
+  <xs:complexType name="HocSinh">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DiaChi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GioiTinh" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HoTen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HocSinhID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NgaySinh" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrangThai" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HocSinh" nillable="true" type="tns:HocSinh" />
+</xs:schema>

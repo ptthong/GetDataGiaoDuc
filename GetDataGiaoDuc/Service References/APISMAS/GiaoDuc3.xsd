@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://qlttgddt.thuathienhue.edu.vn/GiaoDuc.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" />
+  <xs:import schemaLocation="http://qlttgddt.thuathienhue.edu.vn/GiaoDuc.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://qlttgddt.thuathienhue.edu.vn/GiaoDuc.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/" />
+  <xs:element name="GetSchoolProfile">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchoolProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="GetSchoolProfileResult" nillable="true" type="q1:ArrayOfSchoolProfile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSchoolProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listSchoolId" nillable="true" type="q2:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSchoolProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="UpdateSchoolProfileResult" nillable="true" type="q3:ResultBO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CapID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubjectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="GetSubjectResult" nillable="true" type="q4:ArrayOfSubject" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element minOccurs="0" name="NamHocID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="GetClassProfileResult" nillable="true" type="q5:ArrayOfClassProfile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateClassProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element minOccurs="0" name="NamHocID" type="xs:int" />
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listLopId" nillable="true" type="q6:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateClassProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="UpdateClassProfileResult" nillable="true" type="q7:ResultBO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPupilProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element minOccurs="0" name="NamHocID" type="xs:int" />
+        <xs:element minOccurs="0" name="RecordNumber" type="xs:int" />
+        <xs:element minOccurs="0" name="Page" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPupilProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="GetPupilProfileResult" nillable="true" type="q8:ArrayOfPupilProfile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePupilProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element minOccurs="0" name="NamHocID" type="xs:int" />
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listPupilId" nillable="true" type="q9:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePupilProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="UpdatePupilProfileResult" nillable="true" type="q10:ResultBO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPupilMark">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element minOccurs="0" name="NamHocID" type="xs:int" />
+        <xs:element minOccurs="0" name="RecordNumber" type="xs:int" />
+        <xs:element minOccurs="0" name="Page" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPupilMarkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="GetPupilMarkResult" nillable="true" type="q11:ArrayOfPupilMark" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePupilMark">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element minOccurs="0" name="NamHocID" type="xs:int" />
+        <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listMarkID" nillable="true" type="q12:ArrayOfdouble" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePupilMarkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="UpdatePupilMarkResult" nillable="true" type="q13:ResultBO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="GetEmployeeResult" nillable="true" type="q14:ArrayOfEmployee" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEmployee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listEmployeeID" nillable="true" type="q15:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEmployeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="UpdateEmployeeResult" nillable="true" type="q16:ResultBO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPupilRank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element minOccurs="0" name="NamHocID" type="xs:int" />
+        <xs:element minOccurs="0" name="RecordNumber" type="xs:int" />
+        <xs:element minOccurs="0" name="Page" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPupilRankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="GetPupilRankResult" nillable="true" type="q17:ArrayOfPupilRank" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePupilRank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element minOccurs="0" name="NamHocID" type="xs:int" />
+        <xs:element xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listPupilRankID" nillable="true" type="q18:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePupilRankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="UpdatePupilRankResult" nillable="true" type="q19:ResultBO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPupilAbsence">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element minOccurs="0" name="NamHocID" type="xs:int" />
+        <xs:element minOccurs="0" name="RecordNumber" type="xs:int" />
+        <xs:element minOccurs="0" name="Page" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPupilAbsenceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="GetPupilAbsenceResult" nillable="true" type="q20:ArrayOfPupilAbsence" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePupilAbsence">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element minOccurs="0" name="NamHocID" type="xs:int" />
+        <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listPupilAbsenceID" nillable="true" type="q21:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePupilAbsenceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="UpdatePupilAbsenceResult" nillable="true" type="q22:ResultBO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassSubject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element minOccurs="0" name="NamHocID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassSubjectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="GetClassSubjectResult" nillable="true" type="q23:ArrayOfClassSubject" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateClassSubject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element minOccurs="0" name="NamHocID" type="xs:int" />
+        <xs:element xmlns:q24="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listClassSubjectID" nillable="true" type="q24:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateClassSubjectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/GiaoDuc.Service" minOccurs="0" name="UpdateClassSubjectResult" nillable="true" type="q25:ResultBO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTenTruong">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element minOccurs="0" name="iCap" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTenTruongResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetTenTruongResult" nillable="true" type="q26:ArrayOfTenTruong" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTenLop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element minOccurs="0" name="NamHocID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTenLopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetTenLopResult" nillable="true" type="q27:ArrayOfLopHoc" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHocSinh">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TruongID" type="xs:int" />
+        <xs:element minOccurs="0" name="NamHocID" type="xs:int" />
+        <xs:element minOccurs="0" name="LopID" type="xs:int" />
+        <xs:element minOccurs="0" name="HocKyID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHocSinhResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetHocSinhResult" nillable="true" type="q28:ArrayOfHocSinh" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
