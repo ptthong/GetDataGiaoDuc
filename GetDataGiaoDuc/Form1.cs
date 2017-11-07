@@ -15,8 +15,10 @@ namespace GetDataGiaoDuc
 {
     public partial class Form1 : Form
     {
-        SchoolProfile[] arrSchool;
-        
+        public SchoolProfile[] arrSchool;
+        public PupilProfile[] arrStudent;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -43,9 +45,9 @@ namespace GetDataGiaoDuc
             comboBoxDistinctEmployee.Items.Add(new Item("Hương Trà", 1));
             comboBoxDistinctEmployee.Items.Add(new Item("Phong Điền", 1));
             comboBoxDistinctEmployee.Items.Add(new Item("Toàn tỉnh", 1));
-
-
+            //Khởi tạo kết nối đến services.
             
+
         }
        
         private void Form1_Load(object sender, EventArgs e)
@@ -55,11 +57,11 @@ namespace GetDataGiaoDuc
 
         private void btnGetSchool_Click(object sender, EventArgs e)
         {
-
             GiaoDucClient client = new GiaoDucClient();
             client.ClientCredentials.UserName.UserName = "test";
             client.ClientCredentials.UserName.Password = "test123";
-            client.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode  = X509CertificateValidationMode.None;
+            client.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.None;
+
             BindingList<SchoolProfile> sPList = new BindingList<SchoolProfile>();
 
             try
@@ -141,7 +143,33 @@ namespace GetDataGiaoDuc
             else MessageBox.Show("Danh sách trường hiện tại đang trống, vui lòng lấy danh sách từ cổng thông tin", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        private void btnGetDataStudent_Click(object sender, EventArgs e)
+        {
+            GiaoDucClient client = new GiaoDucClient();
+            client.ClientCredentials.UserName.UserName = "test";
+            client.ClientCredentials.UserName.Password = "test123";
+            client.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.None;
 
 
+            BindingList<PupilProfile> studentList = new BindingList<PupilProfile>();
+
+            try
+            {
+                 arrStudent= client.GetPupilProfile(46000702,2017,100,1);
+                for (int i = 0; i < arrStudent.Length; i++)
+                {
+                    Console.WriteLine("\n"+arrStudent[i].PupilCode);
+                    studentList.Add(arrStudent[i]);
+                }
+
+                //labelNumberSchool.Text = "Tổng số trường: " + arrSchool.Length;
+                pupilProfileBindingSource.DataSource = studentList;
+
+            }
+            catch (Exception es)
+            {
+                MessageBox.Show(es.ToString(), "Lỗi kết nối đến máy chủ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

@@ -31,30 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageSchool = new System.Windows.Forms.TabPage();
-            this.tabPageTeacher = new System.Windows.Forms.TabPage();
-            this.btnExportShoolExcel = new System.Windows.Forms.Button();
-            this.tabPageStudent = new System.Windows.Forms.TabPage();
-            this.tabPageMark = new System.Windows.Forms.TabPage();
-            this.btnGetSchool = new System.Windows.Forms.Button();
-            this.labelNumberSchool = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBoxSchoolEmployee = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBoxDistinctEmployee = new System.Windows.Forms.ComboBox();
-            this.btnGetDataEmployee = new System.Windows.Forms.Button();
-            this.btnExportTeacherExcel = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridViewSchool = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridViewEmployee = new System.Windows.Forms.DataGridView();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBoxDistinctStudent = new System.Windows.Forms.ComboBox();
-            this.btnGetDataStudent = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBoxSchoolStudent = new System.Windows.Forms.ComboBox();
-            this.dataGridViewStudent = new System.Windows.Forms.DataGridView();
-            this.schoolProfileBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.schoolCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.schoolNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.educationGradeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,7 +54,22 @@
             this.updateTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.websiteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pupilProfileBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.schoolProfileBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelNumberSchool = new System.Windows.Forms.Label();
+            this.btnExportShoolExcel = new System.Windows.Forms.Button();
+            this.btnGetSchool = new System.Windows.Forms.Button();
+            this.tabPageTeacher = new System.Windows.Forms.TabPage();
+            this.dataGridViewEmployee = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBoxDistinctEmployee = new System.Windows.Forms.ComboBox();
+            this.btnGetDataEmployee = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBoxSchoolEmployee = new System.Windows.Forms.ComboBox();
+            this.btnExportTeacherExcel = new System.Windows.Forms.Button();
+            this.tabPageStudent = new System.Windows.Forms.TabPage();
+            this.dataGridViewStudent = new System.Windows.Forms.DataGridView();
             this.pupilCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.classIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -136,18 +128,26 @@
             this.youngPioneerJoinedPlaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.youthLeagueJoinedDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pupilProfileBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBoxDistinctStudent = new System.Windows.Forms.ComboBox();
+            this.btnGetDataStudent = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBoxSchoolStudent = new System.Windows.Forms.ComboBox();
+            this.tabPageMark = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPageSchool.SuspendLayout();
-            this.tabPageTeacher.SuspendLayout();
-            this.tabPageStudent.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchool)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployee)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolProfileBindingSource)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.tabPageTeacher.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployee)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.tabPageStudent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pupilProfileBindingSource)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -174,141 +174,6 @@
             this.tabPageSchool.TabIndex = 0;
             this.tabPageSchool.Text = "Danh sách các trường toàn tỉnh";
             this.tabPageSchool.UseVisualStyleBackColor = true;
-            // 
-            // tabPageTeacher
-            // 
-            this.tabPageTeacher.Controls.Add(this.dataGridViewEmployee);
-            this.tabPageTeacher.Controls.Add(this.panel2);
-            this.tabPageTeacher.Controls.Add(this.btnExportTeacherExcel);
-            this.tabPageTeacher.Location = new System.Drawing.Point(4, 22);
-            this.tabPageTeacher.Name = "tabPageTeacher";
-            this.tabPageTeacher.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTeacher.Size = new System.Drawing.Size(1157, 591);
-            this.tabPageTeacher.TabIndex = 1;
-            this.tabPageTeacher.Text = "Danh sách giáo viên";
-            this.tabPageTeacher.UseVisualStyleBackColor = true;
-            // 
-            // btnExportShoolExcel
-            // 
-            this.btnExportShoolExcel.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnExportShoolExcel.Location = new System.Drawing.Point(1055, 5);
-            this.btnExportShoolExcel.Name = "btnExportShoolExcel";
-            this.btnExportShoolExcel.Size = new System.Drawing.Size(93, 23);
-            this.btnExportShoolExcel.TabIndex = 1;
-            this.btnExportShoolExcel.Text = "Xuất ra Excel";
-            this.btnExportShoolExcel.UseVisualStyleBackColor = true;
-            this.btnExportShoolExcel.Click += new System.EventHandler(this.btnExportShoolExcel_Click);
-            // 
-            // tabPageStudent
-            // 
-            this.tabPageStudent.Controls.Add(this.dataGridViewStudent);
-            this.tabPageStudent.Controls.Add(this.panel3);
-            this.tabPageStudent.Location = new System.Drawing.Point(4, 22);
-            this.tabPageStudent.Name = "tabPageStudent";
-            this.tabPageStudent.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageStudent.Size = new System.Drawing.Size(1157, 591);
-            this.tabPageStudent.TabIndex = 2;
-            this.tabPageStudent.Text = "Danh sách học sinh";
-            this.tabPageStudent.UseVisualStyleBackColor = true;
-            // 
-            // tabPageMark
-            // 
-            this.tabPageMark.Location = new System.Drawing.Point(4, 22);
-            this.tabPageMark.Name = "tabPageMark";
-            this.tabPageMark.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMark.Size = new System.Drawing.Size(1157, 591);
-            this.tabPageMark.TabIndex = 3;
-            this.tabPageMark.Text = "Lấy điểm theo trường";
-            this.tabPageMark.UseVisualStyleBackColor = true;
-            // 
-            // btnGetSchool
-            // 
-            this.btnGetSchool.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnGetSchool.Location = new System.Drawing.Point(957, 5);
-            this.btnGetSchool.Name = "btnGetSchool";
-            this.btnGetSchool.Size = new System.Drawing.Size(92, 23);
-            this.btnGetSchool.TabIndex = 2;
-            this.btnGetSchool.Text = "Lấy danh sách";
-            this.btnGetSchool.UseVisualStyleBackColor = true;
-            this.btnGetSchool.Click += new System.EventHandler(this.btnGetSchool_Click);
-            // 
-            // labelNumberSchool
-            // 
-            this.labelNumberSchool.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelNumberSchool.AutoSize = true;
-            this.labelNumberSchool.Location = new System.Drawing.Point(3, 10);
-            this.labelNumberSchool.Name = "labelNumberSchool";
-            this.labelNumberSchool.Size = new System.Drawing.Size(85, 13);
-            this.labelNumberSchool.TabIndex = 4;
-            this.labelNumberSchool.Text = "Tổng số trường: ";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(241, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Chọn trường:";
-            // 
-            // comboBoxSchoolEmployee
-            // 
-            this.comboBoxSchoolEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBoxSchoolEmployee.FormattingEnabled = true;
-            this.comboBoxSchoolEmployee.Location = new System.Drawing.Point(315, 7);
-            this.comboBoxSchoolEmployee.Name = "comboBoxSchoolEmployee";
-            this.comboBoxSchoolEmployee.Size = new System.Drawing.Size(413, 21);
-            this.comboBoxSchoolEmployee.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Chọn Huyện:";
-            // 
-            // comboBoxDistinctEmployee
-            // 
-            this.comboBoxDistinctEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBoxDistinctEmployee.FormattingEnabled = true;
-            this.comboBoxDistinctEmployee.Location = new System.Drawing.Point(80, 7);
-            this.comboBoxDistinctEmployee.Name = "comboBoxDistinctEmployee";
-            this.comboBoxDistinctEmployee.Size = new System.Drawing.Size(155, 21);
-            this.comboBoxDistinctEmployee.TabIndex = 3;
-            // 
-            // btnGetDataEmployee
-            // 
-            this.btnGetDataEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnGetDataEmployee.Location = new System.Drawing.Point(734, 7);
-            this.btnGetDataEmployee.Name = "btnGetDataEmployee";
-            this.btnGetDataEmployee.Size = new System.Drawing.Size(75, 23);
-            this.btnGetDataEmployee.TabIndex = 4;
-            this.btnGetDataEmployee.Text = "Lấy dữ liệu";
-            this.btnGetDataEmployee.UseVisualStyleBackColor = true;
-            // 
-            // btnExportTeacherExcel
-            // 
-            this.btnExportTeacherExcel.Location = new System.Drawing.Point(1040, 3);
-            this.btnExportTeacherExcel.Name = "btnExportTeacherExcel";
-            this.btnExportTeacherExcel.Size = new System.Drawing.Size(87, 23);
-            this.btnExportTeacherExcel.TabIndex = 5;
-            this.btnExportTeacherExcel.Text = "Xuất ra Excel";
-            this.btnExportTeacherExcel.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.labelNumberSchool);
-            this.panel1.Controls.Add(this.btnExportShoolExcel);
-            this.panel1.Controls.Add(this.btnGetSchool);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1151, 35);
-            this.panel1.TabIndex = 5;
             // 
             // dataGridViewSchool
             // 
@@ -343,163 +208,6 @@
             this.dataGridViewSchool.Name = "dataGridViewSchool";
             this.dataGridViewSchool.Size = new System.Drawing.Size(1151, 550);
             this.dataGridViewSchool.TabIndex = 6;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.comboBoxDistinctEmployee);
-            this.panel2.Controls.Add(this.btnGetDataEmployee);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.comboBoxSchoolEmployee);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1151, 35);
-            this.panel2.TabIndex = 6;
-            // 
-            // dataGridViewEmployee
-            // 
-            this.dataGridViewEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewEmployee.Location = new System.Drawing.Point(3, 38);
-            this.dataGridViewEmployee.Name = "dataGridViewEmployee";
-            this.dataGridViewEmployee.Size = new System.Drawing.Size(1151, 550);
-            this.dataGridViewEmployee.TabIndex = 7;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.comboBoxDistinctStudent);
-            this.panel3.Controls.Add(this.btnGetDataStudent);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.comboBoxSchoolStudent);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1151, 35);
-            this.panel3.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Chọn Huyện:";
-            // 
-            // comboBoxDistinctStudent
-            // 
-            this.comboBoxDistinctStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBoxDistinctStudent.FormattingEnabled = true;
-            this.comboBoxDistinctStudent.Location = new System.Drawing.Point(80, 7);
-            this.comboBoxDistinctStudent.Name = "comboBoxDistinctStudent";
-            this.comboBoxDistinctStudent.Size = new System.Drawing.Size(155, 21);
-            this.comboBoxDistinctStudent.TabIndex = 3;
-            // 
-            // btnGetDataStudent
-            // 
-            this.btnGetDataStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnGetDataStudent.Location = new System.Drawing.Point(734, 7);
-            this.btnGetDataStudent.Name = "btnGetDataStudent";
-            this.btnGetDataStudent.Size = new System.Drawing.Size(75, 23);
-            this.btnGetDataStudent.TabIndex = 4;
-            this.btnGetDataStudent.Text = "Lấy dữ liệu";
-            this.btnGetDataStudent.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(241, 10);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Chọn trường:";
-            // 
-            // comboBoxSchoolStudent
-            // 
-            this.comboBoxSchoolStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBoxSchoolStudent.FormattingEnabled = true;
-            this.comboBoxSchoolStudent.Location = new System.Drawing.Point(315, 7);
-            this.comboBoxSchoolStudent.Name = "comboBoxSchoolStudent";
-            this.comboBoxSchoolStudent.Size = new System.Drawing.Size(413, 21);
-            this.comboBoxSchoolStudent.TabIndex = 1;
-            // 
-            // dataGridViewStudent
-            // 
-            this.dataGridViewStudent.AutoGenerateColumns = false;
-            this.dataGridViewStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewStudent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.pupilCodeDataGridViewTextBoxColumn,
-            this.classIDDataGridViewTextBoxColumn,
-            this.fullNameDataGridViewTextBoxColumn,
-            this.birthDateDataGridViewTextBoxColumn,
-            this.birthPlaceDataGridViewTextBoxColumn,
-            this.bloodTypeDataGridViewTextBoxColumn,
-            this.communeDataGridViewTextBoxColumn1,
-            this.communistPartyJoinedDateDataGridViewTextBoxColumn,
-            this.communistPartyJoinedPlaceDataGridViewTextBoxColumn,
-            this.disabledSeverityDataGridViewTextBoxColumn,
-            this.disabledTypeIDDataGridViewTextBoxColumn,
-            this.districtDataGridViewTextBoxColumn1,
-            this.emailDataGridViewTextBoxColumn1,
-            this.enrolmentDateDataGridViewTextBoxColumn,
-            this.areaDataGridViewTextBoxColumn1,
-            this.ethnicDataGridViewTextBoxColumn,
-            this.familyTypeIDDataGridViewTextBoxColumn,
-            this.fatherBirthDateDataGridViewTextBoxColumn,
-            this.fatherFullNameDataGridViewTextBoxColumn,
-            this.fatherJobDataGridViewTextBoxColumn,
-            this.fatherMobileDataGridViewTextBoxColumn,
-            this.foreignLanguageTrainingDataGridViewTextBoxColumn,
-            this.genreDataGridViewTextBoxColumn,
-            this.homeTownDataGridViewTextBoxColumn,
-            this.imageDataGridViewTextBoxColumn,
-            this.isCommunistPartyMemberDataGridViewTextBoxColumn,
-            this.isDisabledDataGridViewTextBoxColumn,
-            this.isResidentInDataGridViewTextBoxColumn,
-            this.isSupportForLearningDataGridViewTextBoxColumn,
-            this.isYoungPioneerMemberDataGridViewTextBoxColumn,
-            this.isYouthLeageMemberDataGridViewTextBoxColumn,
-            this.mobileDataGridViewTextBoxColumn,
-            this.motherBirthDateDataGridViewTextBoxColumn,
-            this.motherFullNameDataGridViewTextBoxColumn,
-            this.motherJobDataGridViewTextBoxColumn,
-            this.motherMobileDataGridViewTextBoxColumn,
-            this.orderIdDataGridViewTextBoxColumn,
-            this.permanentResidentalAddressDataGridViewTextBoxColumn,
-            this.policyRegimeIdDataGridViewTextBoxColumn,
-            this.policyTargetIDDataGridViewTextBoxColumn,
-            this.previousGraduationLevelDataGridViewTextBoxColumn,
-            this.priorityTypeIDDataGridViewTextBoxColumn,
-            this.profileStatusDataGridViewTextBoxColumn,
-            this.provinceDataGridViewTextBoxColumn1,
-            this.pupilProfileIdDataGridViewTextBoxColumn,
-            this.religionDataGridViewTextBoxColumn,
-            this.sponsorBirthDateDataGridViewTextBoxColumn,
-            this.sponsorFullNameDataGridViewTextBoxColumn,
-            this.sponsorJobDataGridViewTextBoxColumn,
-            this.sponsorMobileDataGridViewTextBoxColumn,
-            this.synchronizeIdDataGridViewTextBoxColumn1,
-            this.telephoneDataGridViewTextBoxColumn1,
-            this.tempResidentalAddressDataGridViewTextBoxColumn,
-            this.updateTimeDataGridViewTextBoxColumn1,
-            this.youngPioneerJoinedDateDataGridViewTextBoxColumn,
-            this.youngPioneerJoinedPlaceDataGridViewTextBoxColumn,
-            this.youthLeagueJoinedDateDataGridViewTextBoxColumn,
-            this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn});
-            this.dataGridViewStudent.DataSource = this.pupilProfileBindingSource;
-            this.dataGridViewStudent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewStudent.Location = new System.Drawing.Point(3, 38);
-            this.dataGridViewStudent.Name = "dataGridViewStudent";
-            this.dataGridViewStudent.Size = new System.Drawing.Size(1151, 550);
-            this.dataGridViewStudent.TabIndex = 8;
-            // 
-            // schoolProfileBindingSource
-            // 
-            this.schoolProfileBindingSource.DataSource = typeof(GetDataGiaoDuc.APISMAS.SchoolProfile);
             // 
             // schoolCodeDataGridViewTextBoxColumn
             // 
@@ -633,9 +341,226 @@
             this.websiteDataGridViewTextBoxColumn.HeaderText = "Website";
             this.websiteDataGridViewTextBoxColumn.Name = "websiteDataGridViewTextBoxColumn";
             // 
-            // pupilProfileBindingSource
+            // schoolProfileBindingSource
             // 
-            this.pupilProfileBindingSource.DataSource = typeof(GetDataGiaoDuc.APISMAS.PupilProfile);
+            this.schoolProfileBindingSource.DataSource = typeof(GetDataGiaoDuc.APISMAS.SchoolProfile);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.labelNumberSchool);
+            this.panel1.Controls.Add(this.btnExportShoolExcel);
+            this.panel1.Controls.Add(this.btnGetSchool);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1151, 35);
+            this.panel1.TabIndex = 5;
+            // 
+            // labelNumberSchool
+            // 
+            this.labelNumberSchool.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.labelNumberSchool.AutoSize = true;
+            this.labelNumberSchool.Location = new System.Drawing.Point(3, 10);
+            this.labelNumberSchool.Name = "labelNumberSchool";
+            this.labelNumberSchool.Size = new System.Drawing.Size(85, 13);
+            this.labelNumberSchool.TabIndex = 4;
+            this.labelNumberSchool.Text = "Tổng số trường: ";
+            // 
+            // btnExportShoolExcel
+            // 
+            this.btnExportShoolExcel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnExportShoolExcel.Location = new System.Drawing.Point(1055, 5);
+            this.btnExportShoolExcel.Name = "btnExportShoolExcel";
+            this.btnExportShoolExcel.Size = new System.Drawing.Size(93, 23);
+            this.btnExportShoolExcel.TabIndex = 1;
+            this.btnExportShoolExcel.Text = "Xuất ra Excel";
+            this.btnExportShoolExcel.UseVisualStyleBackColor = true;
+            this.btnExportShoolExcel.Click += new System.EventHandler(this.btnExportShoolExcel_Click);
+            // 
+            // btnGetSchool
+            // 
+            this.btnGetSchool.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnGetSchool.Location = new System.Drawing.Point(957, 5);
+            this.btnGetSchool.Name = "btnGetSchool";
+            this.btnGetSchool.Size = new System.Drawing.Size(92, 23);
+            this.btnGetSchool.TabIndex = 2;
+            this.btnGetSchool.Text = "Lấy danh sách";
+            this.btnGetSchool.UseVisualStyleBackColor = true;
+            this.btnGetSchool.Click += new System.EventHandler(this.btnGetSchool_Click);
+            // 
+            // tabPageTeacher
+            // 
+            this.tabPageTeacher.Controls.Add(this.dataGridViewEmployee);
+            this.tabPageTeacher.Controls.Add(this.panel2);
+            this.tabPageTeacher.Controls.Add(this.btnExportTeacherExcel);
+            this.tabPageTeacher.Location = new System.Drawing.Point(4, 22);
+            this.tabPageTeacher.Name = "tabPageTeacher";
+            this.tabPageTeacher.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageTeacher.Size = new System.Drawing.Size(1157, 591);
+            this.tabPageTeacher.TabIndex = 1;
+            this.tabPageTeacher.Text = "Danh sách giáo viên";
+            this.tabPageTeacher.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewEmployee
+            // 
+            this.dataGridViewEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewEmployee.Location = new System.Drawing.Point(3, 38);
+            this.dataGridViewEmployee.Name = "dataGridViewEmployee";
+            this.dataGridViewEmployee.Size = new System.Drawing.Size(1151, 550);
+            this.dataGridViewEmployee.TabIndex = 7;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.comboBoxDistinctEmployee);
+            this.panel2.Controls.Add(this.btnGetDataEmployee);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.comboBoxSchoolEmployee);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1151, 35);
+            this.panel2.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(5, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Chọn Huyện:";
+            // 
+            // comboBoxDistinctEmployee
+            // 
+            this.comboBoxDistinctEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxDistinctEmployee.FormattingEnabled = true;
+            this.comboBoxDistinctEmployee.Location = new System.Drawing.Point(80, 7);
+            this.comboBoxDistinctEmployee.Name = "comboBoxDistinctEmployee";
+            this.comboBoxDistinctEmployee.Size = new System.Drawing.Size(155, 21);
+            this.comboBoxDistinctEmployee.TabIndex = 3;
+            // 
+            // btnGetDataEmployee
+            // 
+            this.btnGetDataEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnGetDataEmployee.Location = new System.Drawing.Point(734, 7);
+            this.btnGetDataEmployee.Name = "btnGetDataEmployee";
+            this.btnGetDataEmployee.Size = new System.Drawing.Size(75, 23);
+            this.btnGetDataEmployee.TabIndex = 4;
+            this.btnGetDataEmployee.Text = "Lấy dữ liệu";
+            this.btnGetDataEmployee.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(241, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Chọn trường:";
+            // 
+            // comboBoxSchoolEmployee
+            // 
+            this.comboBoxSchoolEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxSchoolEmployee.FormattingEnabled = true;
+            this.comboBoxSchoolEmployee.Location = new System.Drawing.Point(315, 7);
+            this.comboBoxSchoolEmployee.Name = "comboBoxSchoolEmployee";
+            this.comboBoxSchoolEmployee.Size = new System.Drawing.Size(413, 21);
+            this.comboBoxSchoolEmployee.TabIndex = 1;
+            // 
+            // btnExportTeacherExcel
+            // 
+            this.btnExportTeacherExcel.Location = new System.Drawing.Point(1040, 3);
+            this.btnExportTeacherExcel.Name = "btnExportTeacherExcel";
+            this.btnExportTeacherExcel.Size = new System.Drawing.Size(87, 23);
+            this.btnExportTeacherExcel.TabIndex = 5;
+            this.btnExportTeacherExcel.Text = "Xuất ra Excel";
+            this.btnExportTeacherExcel.UseVisualStyleBackColor = true;
+            // 
+            // tabPageStudent
+            // 
+            this.tabPageStudent.Controls.Add(this.dataGridViewStudent);
+            this.tabPageStudent.Controls.Add(this.panel3);
+            this.tabPageStudent.Location = new System.Drawing.Point(4, 22);
+            this.tabPageStudent.Name = "tabPageStudent";
+            this.tabPageStudent.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageStudent.Size = new System.Drawing.Size(1157, 591);
+            this.tabPageStudent.TabIndex = 2;
+            this.tabPageStudent.Text = "Danh sách học sinh";
+            this.tabPageStudent.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewStudent
+            // 
+            this.dataGridViewStudent.AutoGenerateColumns = false;
+            this.dataGridViewStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewStudent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.pupilCodeDataGridViewTextBoxColumn,
+            this.classIDDataGridViewTextBoxColumn,
+            this.fullNameDataGridViewTextBoxColumn,
+            this.birthDateDataGridViewTextBoxColumn,
+            this.birthPlaceDataGridViewTextBoxColumn,
+            this.bloodTypeDataGridViewTextBoxColumn,
+            this.communeDataGridViewTextBoxColumn1,
+            this.communistPartyJoinedDateDataGridViewTextBoxColumn,
+            this.communistPartyJoinedPlaceDataGridViewTextBoxColumn,
+            this.disabledSeverityDataGridViewTextBoxColumn,
+            this.disabledTypeIDDataGridViewTextBoxColumn,
+            this.districtDataGridViewTextBoxColumn1,
+            this.emailDataGridViewTextBoxColumn1,
+            this.enrolmentDateDataGridViewTextBoxColumn,
+            this.areaDataGridViewTextBoxColumn1,
+            this.ethnicDataGridViewTextBoxColumn,
+            this.familyTypeIDDataGridViewTextBoxColumn,
+            this.fatherBirthDateDataGridViewTextBoxColumn,
+            this.fatherFullNameDataGridViewTextBoxColumn,
+            this.fatherJobDataGridViewTextBoxColumn,
+            this.fatherMobileDataGridViewTextBoxColumn,
+            this.foreignLanguageTrainingDataGridViewTextBoxColumn,
+            this.genreDataGridViewTextBoxColumn,
+            this.homeTownDataGridViewTextBoxColumn,
+            this.imageDataGridViewTextBoxColumn,
+            this.isCommunistPartyMemberDataGridViewTextBoxColumn,
+            this.isDisabledDataGridViewTextBoxColumn,
+            this.isResidentInDataGridViewTextBoxColumn,
+            this.isSupportForLearningDataGridViewTextBoxColumn,
+            this.isYoungPioneerMemberDataGridViewTextBoxColumn,
+            this.isYouthLeageMemberDataGridViewTextBoxColumn,
+            this.mobileDataGridViewTextBoxColumn,
+            this.motherBirthDateDataGridViewTextBoxColumn,
+            this.motherFullNameDataGridViewTextBoxColumn,
+            this.motherJobDataGridViewTextBoxColumn,
+            this.motherMobileDataGridViewTextBoxColumn,
+            this.orderIdDataGridViewTextBoxColumn,
+            this.permanentResidentalAddressDataGridViewTextBoxColumn,
+            this.policyRegimeIdDataGridViewTextBoxColumn,
+            this.policyTargetIDDataGridViewTextBoxColumn,
+            this.previousGraduationLevelDataGridViewTextBoxColumn,
+            this.priorityTypeIDDataGridViewTextBoxColumn,
+            this.profileStatusDataGridViewTextBoxColumn,
+            this.provinceDataGridViewTextBoxColumn1,
+            this.pupilProfileIdDataGridViewTextBoxColumn,
+            this.religionDataGridViewTextBoxColumn,
+            this.sponsorBirthDateDataGridViewTextBoxColumn,
+            this.sponsorFullNameDataGridViewTextBoxColumn,
+            this.sponsorJobDataGridViewTextBoxColumn,
+            this.sponsorMobileDataGridViewTextBoxColumn,
+            this.synchronizeIdDataGridViewTextBoxColumn1,
+            this.telephoneDataGridViewTextBoxColumn1,
+            this.tempResidentalAddressDataGridViewTextBoxColumn,
+            this.updateTimeDataGridViewTextBoxColumn1,
+            this.youngPioneerJoinedDateDataGridViewTextBoxColumn,
+            this.youngPioneerJoinedPlaceDataGridViewTextBoxColumn,
+            this.youthLeagueJoinedDateDataGridViewTextBoxColumn,
+            this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn});
+            this.dataGridViewStudent.DataSource = this.pupilProfileBindingSource;
+            this.dataGridViewStudent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewStudent.Location = new System.Drawing.Point(3, 38);
+            this.dataGridViewStudent.Name = "dataGridViewStudent";
+            this.dataGridViewStudent.Size = new System.Drawing.Size(1151, 550);
+            this.dataGridViewStudent.TabIndex = 8;
             // 
             // pupilCodeDataGridViewTextBoxColumn
             // 
@@ -985,6 +910,82 @@
             this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn.HeaderText = "YouthLeagueJoinedPlace";
             this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn.Name = "youthLeagueJoinedPlaceDataGridViewTextBoxColumn";
             // 
+            // pupilProfileBindingSource
+            // 
+            this.pupilProfileBindingSource.DataSource = typeof(GetDataGiaoDuc.APISMAS.PupilProfile);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.comboBoxDistinctStudent);
+            this.panel3.Controls.Add(this.btnGetDataStudent);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.comboBoxSchoolStudent);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1151, 35);
+            this.panel3.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(5, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Chọn Huyện:";
+            // 
+            // comboBoxDistinctStudent
+            // 
+            this.comboBoxDistinctStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxDistinctStudent.FormattingEnabled = true;
+            this.comboBoxDistinctStudent.Location = new System.Drawing.Point(80, 7);
+            this.comboBoxDistinctStudent.Name = "comboBoxDistinctStudent";
+            this.comboBoxDistinctStudent.Size = new System.Drawing.Size(155, 21);
+            this.comboBoxDistinctStudent.TabIndex = 3;
+            // 
+            // btnGetDataStudent
+            // 
+            this.btnGetDataStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnGetDataStudent.Location = new System.Drawing.Point(734, 7);
+            this.btnGetDataStudent.Name = "btnGetDataStudent";
+            this.btnGetDataStudent.Size = new System.Drawing.Size(75, 23);
+            this.btnGetDataStudent.TabIndex = 4;
+            this.btnGetDataStudent.Text = "Lấy dữ liệu";
+            this.btnGetDataStudent.UseVisualStyleBackColor = true;
+            this.btnGetDataStudent.Click += new System.EventHandler(this.btnGetDataStudent_Click);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(241, 10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Chọn trường:";
+            // 
+            // comboBoxSchoolStudent
+            // 
+            this.comboBoxSchoolStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxSchoolStudent.FormattingEnabled = true;
+            this.comboBoxSchoolStudent.Location = new System.Drawing.Point(315, 7);
+            this.comboBoxSchoolStudent.Name = "comboBoxSchoolStudent";
+            this.comboBoxSchoolStudent.Size = new System.Drawing.Size(413, 21);
+            this.comboBoxSchoolStudent.TabIndex = 1;
+            // 
+            // tabPageMark
+            // 
+            this.tabPageMark.Location = new System.Drawing.Point(4, 22);
+            this.tabPageMark.Name = "tabPageMark";
+            this.tabPageMark.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageMark.Size = new System.Drawing.Size(1157, 591);
+            this.tabPageMark.TabIndex = 3;
+            this.tabPageMark.Text = "Lấy điểm theo trường";
+            this.tabPageMark.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -997,19 +998,19 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageSchool.ResumeLayout(false);
-            this.tabPageTeacher.ResumeLayout(false);
-            this.tabPageStudent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchool)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolProfileBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchool)).EndInit();
+            this.tabPageTeacher.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployee)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployee)).EndInit();
+            this.tabPageStudent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pupilProfileBindingSource)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudent)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolProfileBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pupilProfileBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
