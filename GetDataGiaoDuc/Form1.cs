@@ -17,6 +17,7 @@ namespace GetDataGiaoDuc
     {
         public SchoolProfile[] arrSchool;
         public PupilProfile[] arrStudent;
+        public Employee[] arrEmployee;
 
 
         public Form1()
@@ -67,6 +68,7 @@ namespace GetDataGiaoDuc
             try
             {
                 arrSchool = client.GetSchoolProfile();
+                client.Close();
                 for (int i = 0; i < arrSchool.Length; i++)
                 {
                     sPList.Add(arrSchool[i]);
@@ -155,7 +157,8 @@ namespace GetDataGiaoDuc
 
             try
             {
-                 arrStudent= client.GetPupilProfile(46000702,2017,100,1);
+                arrStudent= client.GetPupilProfile(46000702,2017,100,1);
+                client.Close();
                 for (int i = 0; i < arrStudent.Length; i++)
                 {
                     Console.WriteLine("\n"+arrStudent[i].PupilCode);
@@ -164,6 +167,34 @@ namespace GetDataGiaoDuc
 
                 //labelNumberSchool.Text = "Tổng số trường: " + arrSchool.Length;
                 pupilProfileBindingSource.DataSource = studentList;
+                MessageBox.Show(arrStudent[2].FullName, "Kết quả", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception es)
+            {
+                MessageBox.Show(es.ToString(), "Lỗi kết nối đến máy chủ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnGetDataEmployee_Click(object sender, EventArgs e)
+        {
+            GiaoDucClient client = new GiaoDucClient();
+            client.ClientCredentials.UserName.UserName = "test";
+            client.ClientCredentials.UserName.Password = "test123";
+            client.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.None;
+
+            BindingList<Employee> eList = new BindingList<Employee>();
+
+            try
+            {
+                arrEmployee = client.GetEmployee(int.Parse("490"));
+                client.Close();
+                for (int i = 0; i < arrEmployee.Length; i++)
+                {
+                    eList.Add(arrEmployee[i]);
+                }
+
+                labelNumberSchool.Text = "Tổng số trường: " + arrSchool.Length;
+                employeeBindingSource.DataSource = eList;
 
             }
             catch (Exception es)
