@@ -129,7 +129,7 @@ namespace GetDataGiaoDuc
                                 {
                                     index++;
                                     ws.Cells[index, 1] = index - 1;
-                                    ws.Cells[index, 2] = sf.SchoolCode;
+                                    ws.Cells[index, 2] = sf.SchoolProfileID;
                                     ws.Cells[index, 3] = sf.EducationGrade.ToString();
                                     ws.Cells[index, 4] = sf.District;
                                     ws.Cells[index, 5] = sf.SchoolName;
@@ -157,10 +157,11 @@ namespace GetDataGiaoDuc
 
             try
             {
-                arrStudent= client.GetPupilProfile(46000702,2017,100,1);
+                arrStudent= client.GetPupilProfile(490, 2017,100,1);
                 client.Close();
                 for (int i = 0; i < arrStudent.Length; i++)
                 {
+
                     Console.WriteLine("\n"+arrStudent[i].PupilCode);
                     studentList.Add(arrStudent[i]);
                 }
