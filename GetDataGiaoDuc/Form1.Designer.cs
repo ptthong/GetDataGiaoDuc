@@ -61,6 +61,73 @@
             this.btnGetSchool = new System.Windows.Forms.Button();
             this.tabPageTeacher = new System.Windows.Forms.TabPage();
             this.dataGridViewEmployee = new System.Windows.Forms.DataGridView();
+            this.aliasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.appliedLevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.birthDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.birthPlaceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.communistPartyJoinedDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.communistPartyJoinedPlaceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contractTypeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dedicatedForYoungLeagueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.educationalManagementGradeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employmentStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ethnicDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.familyTypeIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fatherBirthDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fatherFullNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fatherJobDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fatherWorkingPlaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.foreignLanguageGradeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fullNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genreDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.graduationLevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.healthStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.homeTownDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iTQualificationLevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.identityIssuedDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.identityIssuedPlaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.identityNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imageDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intoSchoolDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isCommunistPartyMemberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isYouthLeageMemberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.joinedDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mariageStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mobileDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.motherBirthDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.motherFullNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.motherJobDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.motherWorkingPlaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.permanentResidentalAddressDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.politicalGradeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qualificationLevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qualificationTypeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.regularRefresherDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.religionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.schoolFacultyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.specialityCatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.spouseBirthDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.spouseFullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.spouseJobDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.spouseWorkingPlaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.staffPositionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startingDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stateManagementGradeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.synchronizeIdDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telephoneDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tempResidentalAddressDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trainingLevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.updateTimeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.workTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.youthLeagueJoinedDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxDistinctEmployee = new System.Windows.Forms.ComboBox();
@@ -136,73 +203,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.comboBoxSchoolStudent = new System.Windows.Forms.ComboBox();
             this.tabPageMark = new System.Windows.Forms.TabPage();
-            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.aliasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appliedLevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.birthDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.birthPlaceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.communistPartyJoinedDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.communistPartyJoinedPlaceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contractTypeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dedicatedForYoungLeagueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.educationalManagementGradeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employeeCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employeeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employeeTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employmentStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ethnicDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.familyTypeIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fatherBirthDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fatherFullNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fatherJobDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fatherWorkingPlaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.foreignLanguageGradeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fullNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genreDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.graduationLevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.healthStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.homeTownDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iTQualificationLevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.identityIssuedDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.identityIssuedPlaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.identityNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.imageDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intoSchoolDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isCommunistPartyMemberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isYouthLeageMemberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.joinedDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mariageStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mobileDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.motherBirthDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.motherFullNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.motherJobDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.motherWorkingPlaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.permanentResidentalAddressDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.politicalGradeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qualificationLevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qualificationTypeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.regularRefresherDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.religionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.schoolFacultyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.specialityCatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.spouseBirthDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.spouseFullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.spouseJobDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.spouseWorkingPlaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.staffPositionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startingDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stateManagementGradeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.synchronizeIdDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telephoneDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tempResidentalAddressDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trainingLevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.updateTimeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.workTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.youthLeagueJoinedDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnExportStudent = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPageSchool.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchool)).BeginInit();
@@ -210,12 +211,12 @@
             this.panel1.SuspendLayout();
             this.tabPageTeacher.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
             this.tabPageStudent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pupilProfileBindingSource)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -546,587 +547,6 @@
             this.dataGridViewEmployee.Name = "dataGridViewEmployee";
             this.dataGridViewEmployee.Size = new System.Drawing.Size(1151, 550);
             this.dataGridViewEmployee.TabIndex = 7;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.comboBoxDistinctEmployee);
-            this.panel2.Controls.Add(this.btnGetDataEmployee);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.comboBoxSchoolEmployee);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1151, 35);
-            this.panel2.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Chọn Huyện:";
-            // 
-            // comboBoxDistinctEmployee
-            // 
-            this.comboBoxDistinctEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBoxDistinctEmployee.FormattingEnabled = true;
-            this.comboBoxDistinctEmployee.Location = new System.Drawing.Point(80, 7);
-            this.comboBoxDistinctEmployee.Name = "comboBoxDistinctEmployee";
-            this.comboBoxDistinctEmployee.Size = new System.Drawing.Size(155, 21);
-            this.comboBoxDistinctEmployee.TabIndex = 3;
-            // 
-            // btnGetDataEmployee
-            // 
-            this.btnGetDataEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnGetDataEmployee.Location = new System.Drawing.Point(734, 7);
-            this.btnGetDataEmployee.Name = "btnGetDataEmployee";
-            this.btnGetDataEmployee.Size = new System.Drawing.Size(75, 23);
-            this.btnGetDataEmployee.TabIndex = 4;
-            this.btnGetDataEmployee.Text = "Lấy dữ liệu";
-            this.btnGetDataEmployee.UseVisualStyleBackColor = true;
-            this.btnGetDataEmployee.Click += new System.EventHandler(this.btnGetDataEmployee_Click);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(241, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Chọn trường:";
-            // 
-            // comboBoxSchoolEmployee
-            // 
-            this.comboBoxSchoolEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBoxSchoolEmployee.FormattingEnabled = true;
-            this.comboBoxSchoolEmployee.Location = new System.Drawing.Point(315, 7);
-            this.comboBoxSchoolEmployee.Name = "comboBoxSchoolEmployee";
-            this.comboBoxSchoolEmployee.Size = new System.Drawing.Size(413, 21);
-            this.comboBoxSchoolEmployee.TabIndex = 1;
-            // 
-            // btnExportTeacherExcel
-            // 
-            this.btnExportTeacherExcel.Location = new System.Drawing.Point(1040, 3);
-            this.btnExportTeacherExcel.Name = "btnExportTeacherExcel";
-            this.btnExportTeacherExcel.Size = new System.Drawing.Size(87, 23);
-            this.btnExportTeacherExcel.TabIndex = 5;
-            this.btnExportTeacherExcel.Text = "Xuất ra Excel";
-            this.btnExportTeacherExcel.UseVisualStyleBackColor = true;
-            // 
-            // tabPageStudent
-            // 
-            this.tabPageStudent.Controls.Add(this.dataGridViewStudent);
-            this.tabPageStudent.Controls.Add(this.panel3);
-            this.tabPageStudent.Location = new System.Drawing.Point(4, 22);
-            this.tabPageStudent.Name = "tabPageStudent";
-            this.tabPageStudent.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageStudent.Size = new System.Drawing.Size(1157, 591);
-            this.tabPageStudent.TabIndex = 2;
-            this.tabPageStudent.Text = "Danh sách học sinh";
-            this.tabPageStudent.UseVisualStyleBackColor = true;
-            // 
-            // dataGridViewStudent
-            // 
-            this.dataGridViewStudent.AutoGenerateColumns = false;
-            this.dataGridViewStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewStudent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.pupilCodeDataGridViewTextBoxColumn,
-            this.classIDDataGridViewTextBoxColumn,
-            this.fullNameDataGridViewTextBoxColumn,
-            this.birthDateDataGridViewTextBoxColumn,
-            this.birthPlaceDataGridViewTextBoxColumn,
-            this.bloodTypeDataGridViewTextBoxColumn,
-            this.communeDataGridViewTextBoxColumn1,
-            this.communistPartyJoinedDateDataGridViewTextBoxColumn,
-            this.communistPartyJoinedPlaceDataGridViewTextBoxColumn,
-            this.disabledSeverityDataGridViewTextBoxColumn,
-            this.disabledTypeIDDataGridViewTextBoxColumn,
-            this.districtDataGridViewTextBoxColumn1,
-            this.emailDataGridViewTextBoxColumn1,
-            this.enrolmentDateDataGridViewTextBoxColumn,
-            this.areaDataGridViewTextBoxColumn1,
-            this.ethnicDataGridViewTextBoxColumn,
-            this.familyTypeIDDataGridViewTextBoxColumn,
-            this.fatherBirthDateDataGridViewTextBoxColumn,
-            this.fatherFullNameDataGridViewTextBoxColumn,
-            this.fatherJobDataGridViewTextBoxColumn,
-            this.fatherMobileDataGridViewTextBoxColumn,
-            this.foreignLanguageTrainingDataGridViewTextBoxColumn,
-            this.genreDataGridViewTextBoxColumn,
-            this.homeTownDataGridViewTextBoxColumn,
-            this.imageDataGridViewTextBoxColumn,
-            this.isCommunistPartyMemberDataGridViewTextBoxColumn,
-            this.isDisabledDataGridViewTextBoxColumn,
-            this.isResidentInDataGridViewTextBoxColumn,
-            this.isSupportForLearningDataGridViewTextBoxColumn,
-            this.isYoungPioneerMemberDataGridViewTextBoxColumn,
-            this.isYouthLeageMemberDataGridViewTextBoxColumn,
-            this.mobileDataGridViewTextBoxColumn,
-            this.motherBirthDateDataGridViewTextBoxColumn,
-            this.motherFullNameDataGridViewTextBoxColumn,
-            this.motherJobDataGridViewTextBoxColumn,
-            this.motherMobileDataGridViewTextBoxColumn,
-            this.orderIdDataGridViewTextBoxColumn,
-            this.permanentResidentalAddressDataGridViewTextBoxColumn,
-            this.policyRegimeIdDataGridViewTextBoxColumn,
-            this.policyTargetIDDataGridViewTextBoxColumn,
-            this.previousGraduationLevelDataGridViewTextBoxColumn,
-            this.priorityTypeIDDataGridViewTextBoxColumn,
-            this.profileStatusDataGridViewTextBoxColumn,
-            this.provinceDataGridViewTextBoxColumn1,
-            this.pupilProfileIdDataGridViewTextBoxColumn,
-            this.religionDataGridViewTextBoxColumn,
-            this.sponsorBirthDateDataGridViewTextBoxColumn,
-            this.sponsorFullNameDataGridViewTextBoxColumn,
-            this.sponsorJobDataGridViewTextBoxColumn,
-            this.sponsorMobileDataGridViewTextBoxColumn,
-            this.synchronizeIdDataGridViewTextBoxColumn1,
-            this.telephoneDataGridViewTextBoxColumn1,
-            this.tempResidentalAddressDataGridViewTextBoxColumn,
-            this.updateTimeDataGridViewTextBoxColumn1,
-            this.youngPioneerJoinedDateDataGridViewTextBoxColumn,
-            this.youngPioneerJoinedPlaceDataGridViewTextBoxColumn,
-            this.youthLeagueJoinedDateDataGridViewTextBoxColumn,
-            this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn});
-            this.dataGridViewStudent.DataSource = this.pupilProfileBindingSource;
-            this.dataGridViewStudent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewStudent.Location = new System.Drawing.Point(3, 38);
-            this.dataGridViewStudent.Name = "dataGridViewStudent";
-            this.dataGridViewStudent.Size = new System.Drawing.Size(1151, 550);
-            this.dataGridViewStudent.TabIndex = 8;
-            // 
-            // pupilCodeDataGridViewTextBoxColumn
-            // 
-            this.pupilCodeDataGridViewTextBoxColumn.DataPropertyName = "PupilCode";
-            this.pupilCodeDataGridViewTextBoxColumn.HeaderText = "PupilCode";
-            this.pupilCodeDataGridViewTextBoxColumn.Name = "pupilCodeDataGridViewTextBoxColumn";
-            // 
-            // classIDDataGridViewTextBoxColumn
-            // 
-            this.classIDDataGridViewTextBoxColumn.DataPropertyName = "ClassID";
-            this.classIDDataGridViewTextBoxColumn.HeaderText = "ClassID";
-            this.classIDDataGridViewTextBoxColumn.Name = "classIDDataGridViewTextBoxColumn";
-            // 
-            // fullNameDataGridViewTextBoxColumn
-            // 
-            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
-            this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
-            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
-            // 
-            // birthDateDataGridViewTextBoxColumn
-            // 
-            this.birthDateDataGridViewTextBoxColumn.DataPropertyName = "BirthDate";
-            this.birthDateDataGridViewTextBoxColumn.HeaderText = "BirthDate";
-            this.birthDateDataGridViewTextBoxColumn.Name = "birthDateDataGridViewTextBoxColumn";
-            // 
-            // birthPlaceDataGridViewTextBoxColumn
-            // 
-            this.birthPlaceDataGridViewTextBoxColumn.DataPropertyName = "BirthPlace";
-            this.birthPlaceDataGridViewTextBoxColumn.HeaderText = "BirthPlace";
-            this.birthPlaceDataGridViewTextBoxColumn.Name = "birthPlaceDataGridViewTextBoxColumn";
-            // 
-            // bloodTypeDataGridViewTextBoxColumn
-            // 
-            this.bloodTypeDataGridViewTextBoxColumn.DataPropertyName = "BloodType";
-            this.bloodTypeDataGridViewTextBoxColumn.HeaderText = "BloodType";
-            this.bloodTypeDataGridViewTextBoxColumn.Name = "bloodTypeDataGridViewTextBoxColumn";
-            // 
-            // communeDataGridViewTextBoxColumn1
-            // 
-            this.communeDataGridViewTextBoxColumn1.DataPropertyName = "Commune";
-            this.communeDataGridViewTextBoxColumn1.HeaderText = "Commune";
-            this.communeDataGridViewTextBoxColumn1.Name = "communeDataGridViewTextBoxColumn1";
-            // 
-            // communistPartyJoinedDateDataGridViewTextBoxColumn
-            // 
-            this.communistPartyJoinedDateDataGridViewTextBoxColumn.DataPropertyName = "CommunistPartyJoinedDate";
-            this.communistPartyJoinedDateDataGridViewTextBoxColumn.HeaderText = "CommunistPartyJoinedDate";
-            this.communistPartyJoinedDateDataGridViewTextBoxColumn.Name = "communistPartyJoinedDateDataGridViewTextBoxColumn";
-            // 
-            // communistPartyJoinedPlaceDataGridViewTextBoxColumn
-            // 
-            this.communistPartyJoinedPlaceDataGridViewTextBoxColumn.DataPropertyName = "CommunistPartyJoinedPlace";
-            this.communistPartyJoinedPlaceDataGridViewTextBoxColumn.HeaderText = "CommunistPartyJoinedPlace";
-            this.communistPartyJoinedPlaceDataGridViewTextBoxColumn.Name = "communistPartyJoinedPlaceDataGridViewTextBoxColumn";
-            // 
-            // disabledSeverityDataGridViewTextBoxColumn
-            // 
-            this.disabledSeverityDataGridViewTextBoxColumn.DataPropertyName = "DisabledSeverity";
-            this.disabledSeverityDataGridViewTextBoxColumn.HeaderText = "DisabledSeverity";
-            this.disabledSeverityDataGridViewTextBoxColumn.Name = "disabledSeverityDataGridViewTextBoxColumn";
-            // 
-            // disabledTypeIDDataGridViewTextBoxColumn
-            // 
-            this.disabledTypeIDDataGridViewTextBoxColumn.DataPropertyName = "DisabledTypeID";
-            this.disabledTypeIDDataGridViewTextBoxColumn.HeaderText = "DisabledTypeID";
-            this.disabledTypeIDDataGridViewTextBoxColumn.Name = "disabledTypeIDDataGridViewTextBoxColumn";
-            // 
-            // districtDataGridViewTextBoxColumn1
-            // 
-            this.districtDataGridViewTextBoxColumn1.DataPropertyName = "District";
-            this.districtDataGridViewTextBoxColumn1.HeaderText = "District";
-            this.districtDataGridViewTextBoxColumn1.Name = "districtDataGridViewTextBoxColumn1";
-            // 
-            // emailDataGridViewTextBoxColumn1
-            // 
-            this.emailDataGridViewTextBoxColumn1.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn1.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn1.Name = "emailDataGridViewTextBoxColumn1";
-            // 
-            // enrolmentDateDataGridViewTextBoxColumn
-            // 
-            this.enrolmentDateDataGridViewTextBoxColumn.DataPropertyName = "EnrolmentDate";
-            this.enrolmentDateDataGridViewTextBoxColumn.HeaderText = "EnrolmentDate";
-            this.enrolmentDateDataGridViewTextBoxColumn.Name = "enrolmentDateDataGridViewTextBoxColumn";
-            // 
-            // areaDataGridViewTextBoxColumn1
-            // 
-            this.areaDataGridViewTextBoxColumn1.DataPropertyName = "Area";
-            this.areaDataGridViewTextBoxColumn1.HeaderText = "Area";
-            this.areaDataGridViewTextBoxColumn1.Name = "areaDataGridViewTextBoxColumn1";
-            // 
-            // ethnicDataGridViewTextBoxColumn
-            // 
-            this.ethnicDataGridViewTextBoxColumn.DataPropertyName = "Ethnic";
-            this.ethnicDataGridViewTextBoxColumn.HeaderText = "Ethnic";
-            this.ethnicDataGridViewTextBoxColumn.Name = "ethnicDataGridViewTextBoxColumn";
-            // 
-            // familyTypeIDDataGridViewTextBoxColumn
-            // 
-            this.familyTypeIDDataGridViewTextBoxColumn.DataPropertyName = "FamilyTypeID";
-            this.familyTypeIDDataGridViewTextBoxColumn.HeaderText = "FamilyTypeID";
-            this.familyTypeIDDataGridViewTextBoxColumn.Name = "familyTypeIDDataGridViewTextBoxColumn";
-            // 
-            // fatherBirthDateDataGridViewTextBoxColumn
-            // 
-            this.fatherBirthDateDataGridViewTextBoxColumn.DataPropertyName = "FatherBirthDate";
-            this.fatherBirthDateDataGridViewTextBoxColumn.HeaderText = "FatherBirthDate";
-            this.fatherBirthDateDataGridViewTextBoxColumn.Name = "fatherBirthDateDataGridViewTextBoxColumn";
-            // 
-            // fatherFullNameDataGridViewTextBoxColumn
-            // 
-            this.fatherFullNameDataGridViewTextBoxColumn.DataPropertyName = "FatherFullName";
-            this.fatherFullNameDataGridViewTextBoxColumn.HeaderText = "FatherFullName";
-            this.fatherFullNameDataGridViewTextBoxColumn.Name = "fatherFullNameDataGridViewTextBoxColumn";
-            // 
-            // fatherJobDataGridViewTextBoxColumn
-            // 
-            this.fatherJobDataGridViewTextBoxColumn.DataPropertyName = "FatherJob";
-            this.fatherJobDataGridViewTextBoxColumn.HeaderText = "FatherJob";
-            this.fatherJobDataGridViewTextBoxColumn.Name = "fatherJobDataGridViewTextBoxColumn";
-            // 
-            // fatherMobileDataGridViewTextBoxColumn
-            // 
-            this.fatherMobileDataGridViewTextBoxColumn.DataPropertyName = "FatherMobile";
-            this.fatherMobileDataGridViewTextBoxColumn.HeaderText = "FatherMobile";
-            this.fatherMobileDataGridViewTextBoxColumn.Name = "fatherMobileDataGridViewTextBoxColumn";
-            // 
-            // foreignLanguageTrainingDataGridViewTextBoxColumn
-            // 
-            this.foreignLanguageTrainingDataGridViewTextBoxColumn.DataPropertyName = "ForeignLanguageTraining";
-            this.foreignLanguageTrainingDataGridViewTextBoxColumn.HeaderText = "ForeignLanguageTraining";
-            this.foreignLanguageTrainingDataGridViewTextBoxColumn.Name = "foreignLanguageTrainingDataGridViewTextBoxColumn";
-            // 
-            // genreDataGridViewTextBoxColumn
-            // 
-            this.genreDataGridViewTextBoxColumn.DataPropertyName = "Genre";
-            this.genreDataGridViewTextBoxColumn.HeaderText = "Genre";
-            this.genreDataGridViewTextBoxColumn.Name = "genreDataGridViewTextBoxColumn";
-            // 
-            // homeTownDataGridViewTextBoxColumn
-            // 
-            this.homeTownDataGridViewTextBoxColumn.DataPropertyName = "HomeTown";
-            this.homeTownDataGridViewTextBoxColumn.HeaderText = "HomeTown";
-            this.homeTownDataGridViewTextBoxColumn.Name = "homeTownDataGridViewTextBoxColumn";
-            // 
-            // imageDataGridViewTextBoxColumn
-            // 
-            this.imageDataGridViewTextBoxColumn.DataPropertyName = "Image";
-            this.imageDataGridViewTextBoxColumn.HeaderText = "Image";
-            this.imageDataGridViewTextBoxColumn.Name = "imageDataGridViewTextBoxColumn";
-            // 
-            // isCommunistPartyMemberDataGridViewTextBoxColumn
-            // 
-            this.isCommunistPartyMemberDataGridViewTextBoxColumn.DataPropertyName = "IsCommunistPartyMember";
-            this.isCommunistPartyMemberDataGridViewTextBoxColumn.HeaderText = "IsCommunistPartyMember";
-            this.isCommunistPartyMemberDataGridViewTextBoxColumn.Name = "isCommunistPartyMemberDataGridViewTextBoxColumn";
-            // 
-            // isDisabledDataGridViewTextBoxColumn
-            // 
-            this.isDisabledDataGridViewTextBoxColumn.DataPropertyName = "IsDisabled";
-            this.isDisabledDataGridViewTextBoxColumn.HeaderText = "IsDisabled";
-            this.isDisabledDataGridViewTextBoxColumn.Name = "isDisabledDataGridViewTextBoxColumn";
-            // 
-            // isResidentInDataGridViewTextBoxColumn
-            // 
-            this.isResidentInDataGridViewTextBoxColumn.DataPropertyName = "IsResidentIn";
-            this.isResidentInDataGridViewTextBoxColumn.HeaderText = "IsResidentIn";
-            this.isResidentInDataGridViewTextBoxColumn.Name = "isResidentInDataGridViewTextBoxColumn";
-            // 
-            // isSupportForLearningDataGridViewTextBoxColumn
-            // 
-            this.isSupportForLearningDataGridViewTextBoxColumn.DataPropertyName = "IsSupportForLearning";
-            this.isSupportForLearningDataGridViewTextBoxColumn.HeaderText = "IsSupportForLearning";
-            this.isSupportForLearningDataGridViewTextBoxColumn.Name = "isSupportForLearningDataGridViewTextBoxColumn";
-            // 
-            // isYoungPioneerMemberDataGridViewTextBoxColumn
-            // 
-            this.isYoungPioneerMemberDataGridViewTextBoxColumn.DataPropertyName = "IsYoungPioneerMember";
-            this.isYoungPioneerMemberDataGridViewTextBoxColumn.HeaderText = "IsYoungPioneerMember";
-            this.isYoungPioneerMemberDataGridViewTextBoxColumn.Name = "isYoungPioneerMemberDataGridViewTextBoxColumn";
-            // 
-            // isYouthLeageMemberDataGridViewTextBoxColumn
-            // 
-            this.isYouthLeageMemberDataGridViewTextBoxColumn.DataPropertyName = "IsYouthLeageMember";
-            this.isYouthLeageMemberDataGridViewTextBoxColumn.HeaderText = "IsYouthLeageMember";
-            this.isYouthLeageMemberDataGridViewTextBoxColumn.Name = "isYouthLeageMemberDataGridViewTextBoxColumn";
-            // 
-            // mobileDataGridViewTextBoxColumn
-            // 
-            this.mobileDataGridViewTextBoxColumn.DataPropertyName = "Mobile";
-            this.mobileDataGridViewTextBoxColumn.HeaderText = "Mobile";
-            this.mobileDataGridViewTextBoxColumn.Name = "mobileDataGridViewTextBoxColumn";
-            // 
-            // motherBirthDateDataGridViewTextBoxColumn
-            // 
-            this.motherBirthDateDataGridViewTextBoxColumn.DataPropertyName = "MotherBirthDate";
-            this.motherBirthDateDataGridViewTextBoxColumn.HeaderText = "MotherBirthDate";
-            this.motherBirthDateDataGridViewTextBoxColumn.Name = "motherBirthDateDataGridViewTextBoxColumn";
-            // 
-            // motherFullNameDataGridViewTextBoxColumn
-            // 
-            this.motherFullNameDataGridViewTextBoxColumn.DataPropertyName = "MotherFullName";
-            this.motherFullNameDataGridViewTextBoxColumn.HeaderText = "MotherFullName";
-            this.motherFullNameDataGridViewTextBoxColumn.Name = "motherFullNameDataGridViewTextBoxColumn";
-            // 
-            // motherJobDataGridViewTextBoxColumn
-            // 
-            this.motherJobDataGridViewTextBoxColumn.DataPropertyName = "MotherJob";
-            this.motherJobDataGridViewTextBoxColumn.HeaderText = "MotherJob";
-            this.motherJobDataGridViewTextBoxColumn.Name = "motherJobDataGridViewTextBoxColumn";
-            // 
-            // motherMobileDataGridViewTextBoxColumn
-            // 
-            this.motherMobileDataGridViewTextBoxColumn.DataPropertyName = "MotherMobile";
-            this.motherMobileDataGridViewTextBoxColumn.HeaderText = "MotherMobile";
-            this.motherMobileDataGridViewTextBoxColumn.Name = "motherMobileDataGridViewTextBoxColumn";
-            // 
-            // orderIdDataGridViewTextBoxColumn
-            // 
-            this.orderIdDataGridViewTextBoxColumn.DataPropertyName = "OrderId";
-            this.orderIdDataGridViewTextBoxColumn.HeaderText = "OrderId";
-            this.orderIdDataGridViewTextBoxColumn.Name = "orderIdDataGridViewTextBoxColumn";
-            // 
-            // permanentResidentalAddressDataGridViewTextBoxColumn
-            // 
-            this.permanentResidentalAddressDataGridViewTextBoxColumn.DataPropertyName = "PermanentResidentalAddress";
-            this.permanentResidentalAddressDataGridViewTextBoxColumn.HeaderText = "PermanentResidentalAddress";
-            this.permanentResidentalAddressDataGridViewTextBoxColumn.Name = "permanentResidentalAddressDataGridViewTextBoxColumn";
-            // 
-            // policyRegimeIdDataGridViewTextBoxColumn
-            // 
-            this.policyRegimeIdDataGridViewTextBoxColumn.DataPropertyName = "PolicyRegimeId";
-            this.policyRegimeIdDataGridViewTextBoxColumn.HeaderText = "PolicyRegimeId";
-            this.policyRegimeIdDataGridViewTextBoxColumn.Name = "policyRegimeIdDataGridViewTextBoxColumn";
-            // 
-            // policyTargetIDDataGridViewTextBoxColumn
-            // 
-            this.policyTargetIDDataGridViewTextBoxColumn.DataPropertyName = "PolicyTargetID";
-            this.policyTargetIDDataGridViewTextBoxColumn.HeaderText = "PolicyTargetID";
-            this.policyTargetIDDataGridViewTextBoxColumn.Name = "policyTargetIDDataGridViewTextBoxColumn";
-            // 
-            // previousGraduationLevelDataGridViewTextBoxColumn
-            // 
-            this.previousGraduationLevelDataGridViewTextBoxColumn.DataPropertyName = "PreviousGraduationLevel";
-            this.previousGraduationLevelDataGridViewTextBoxColumn.HeaderText = "PreviousGraduationLevel";
-            this.previousGraduationLevelDataGridViewTextBoxColumn.Name = "previousGraduationLevelDataGridViewTextBoxColumn";
-            // 
-            // priorityTypeIDDataGridViewTextBoxColumn
-            // 
-            this.priorityTypeIDDataGridViewTextBoxColumn.DataPropertyName = "PriorityTypeID";
-            this.priorityTypeIDDataGridViewTextBoxColumn.HeaderText = "PriorityTypeID";
-            this.priorityTypeIDDataGridViewTextBoxColumn.Name = "priorityTypeIDDataGridViewTextBoxColumn";
-            // 
-            // profileStatusDataGridViewTextBoxColumn
-            // 
-            this.profileStatusDataGridViewTextBoxColumn.DataPropertyName = "ProfileStatus";
-            this.profileStatusDataGridViewTextBoxColumn.HeaderText = "ProfileStatus";
-            this.profileStatusDataGridViewTextBoxColumn.Name = "profileStatusDataGridViewTextBoxColumn";
-            // 
-            // provinceDataGridViewTextBoxColumn1
-            // 
-            this.provinceDataGridViewTextBoxColumn1.DataPropertyName = "Province";
-            this.provinceDataGridViewTextBoxColumn1.HeaderText = "Province";
-            this.provinceDataGridViewTextBoxColumn1.Name = "provinceDataGridViewTextBoxColumn1";
-            // 
-            // pupilProfileIdDataGridViewTextBoxColumn
-            // 
-            this.pupilProfileIdDataGridViewTextBoxColumn.DataPropertyName = "PupilProfileId";
-            this.pupilProfileIdDataGridViewTextBoxColumn.HeaderText = "PupilProfileId";
-            this.pupilProfileIdDataGridViewTextBoxColumn.Name = "pupilProfileIdDataGridViewTextBoxColumn";
-            // 
-            // religionDataGridViewTextBoxColumn
-            // 
-            this.religionDataGridViewTextBoxColumn.DataPropertyName = "Religion";
-            this.religionDataGridViewTextBoxColumn.HeaderText = "Religion";
-            this.religionDataGridViewTextBoxColumn.Name = "religionDataGridViewTextBoxColumn";
-            // 
-            // sponsorBirthDateDataGridViewTextBoxColumn
-            // 
-            this.sponsorBirthDateDataGridViewTextBoxColumn.DataPropertyName = "SponsorBirthDate";
-            this.sponsorBirthDateDataGridViewTextBoxColumn.HeaderText = "SponsorBirthDate";
-            this.sponsorBirthDateDataGridViewTextBoxColumn.Name = "sponsorBirthDateDataGridViewTextBoxColumn";
-            // 
-            // sponsorFullNameDataGridViewTextBoxColumn
-            // 
-            this.sponsorFullNameDataGridViewTextBoxColumn.DataPropertyName = "SponsorFullName";
-            this.sponsorFullNameDataGridViewTextBoxColumn.HeaderText = "SponsorFullName";
-            this.sponsorFullNameDataGridViewTextBoxColumn.Name = "sponsorFullNameDataGridViewTextBoxColumn";
-            // 
-            // sponsorJobDataGridViewTextBoxColumn
-            // 
-            this.sponsorJobDataGridViewTextBoxColumn.DataPropertyName = "SponsorJob";
-            this.sponsorJobDataGridViewTextBoxColumn.HeaderText = "SponsorJob";
-            this.sponsorJobDataGridViewTextBoxColumn.Name = "sponsorJobDataGridViewTextBoxColumn";
-            // 
-            // sponsorMobileDataGridViewTextBoxColumn
-            // 
-            this.sponsorMobileDataGridViewTextBoxColumn.DataPropertyName = "SponsorMobile";
-            this.sponsorMobileDataGridViewTextBoxColumn.HeaderText = "SponsorMobile";
-            this.sponsorMobileDataGridViewTextBoxColumn.Name = "sponsorMobileDataGridViewTextBoxColumn";
-            // 
-            // synchronizeIdDataGridViewTextBoxColumn1
-            // 
-            this.synchronizeIdDataGridViewTextBoxColumn1.DataPropertyName = "SynchronizeId";
-            this.synchronizeIdDataGridViewTextBoxColumn1.HeaderText = "SynchronizeId";
-            this.synchronizeIdDataGridViewTextBoxColumn1.Name = "synchronizeIdDataGridViewTextBoxColumn1";
-            // 
-            // telephoneDataGridViewTextBoxColumn1
-            // 
-            this.telephoneDataGridViewTextBoxColumn1.DataPropertyName = "Telephone";
-            this.telephoneDataGridViewTextBoxColumn1.HeaderText = "Telephone";
-            this.telephoneDataGridViewTextBoxColumn1.Name = "telephoneDataGridViewTextBoxColumn1";
-            // 
-            // tempResidentalAddressDataGridViewTextBoxColumn
-            // 
-            this.tempResidentalAddressDataGridViewTextBoxColumn.DataPropertyName = "TempResidentalAddress";
-            this.tempResidentalAddressDataGridViewTextBoxColumn.HeaderText = "TempResidentalAddress";
-            this.tempResidentalAddressDataGridViewTextBoxColumn.Name = "tempResidentalAddressDataGridViewTextBoxColumn";
-            // 
-            // updateTimeDataGridViewTextBoxColumn1
-            // 
-            this.updateTimeDataGridViewTextBoxColumn1.DataPropertyName = "UpdateTime";
-            this.updateTimeDataGridViewTextBoxColumn1.HeaderText = "UpdateTime";
-            this.updateTimeDataGridViewTextBoxColumn1.Name = "updateTimeDataGridViewTextBoxColumn1";
-            // 
-            // youngPioneerJoinedDateDataGridViewTextBoxColumn
-            // 
-            this.youngPioneerJoinedDateDataGridViewTextBoxColumn.DataPropertyName = "YoungPioneerJoinedDate";
-            this.youngPioneerJoinedDateDataGridViewTextBoxColumn.HeaderText = "YoungPioneerJoinedDate";
-            this.youngPioneerJoinedDateDataGridViewTextBoxColumn.Name = "youngPioneerJoinedDateDataGridViewTextBoxColumn";
-            // 
-            // youngPioneerJoinedPlaceDataGridViewTextBoxColumn
-            // 
-            this.youngPioneerJoinedPlaceDataGridViewTextBoxColumn.DataPropertyName = "YoungPioneerJoinedPlace";
-            this.youngPioneerJoinedPlaceDataGridViewTextBoxColumn.HeaderText = "YoungPioneerJoinedPlace";
-            this.youngPioneerJoinedPlaceDataGridViewTextBoxColumn.Name = "youngPioneerJoinedPlaceDataGridViewTextBoxColumn";
-            // 
-            // youthLeagueJoinedDateDataGridViewTextBoxColumn
-            // 
-            this.youthLeagueJoinedDateDataGridViewTextBoxColumn.DataPropertyName = "YouthLeagueJoinedDate";
-            this.youthLeagueJoinedDateDataGridViewTextBoxColumn.HeaderText = "YouthLeagueJoinedDate";
-            this.youthLeagueJoinedDateDataGridViewTextBoxColumn.Name = "youthLeagueJoinedDateDataGridViewTextBoxColumn";
-            // 
-            // youthLeagueJoinedPlaceDataGridViewTextBoxColumn
-            // 
-            this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn.DataPropertyName = "YouthLeagueJoinedPlace";
-            this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn.HeaderText = "YouthLeagueJoinedPlace";
-            this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn.Name = "youthLeagueJoinedPlaceDataGridViewTextBoxColumn";
-            // 
-            // pupilProfileBindingSource
-            // 
-            this.pupilProfileBindingSource.DataSource = typeof(GetDataGiaoDuc.APISMAS.PupilProfile);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.comboBoxDistinctStudent);
-            this.panel3.Controls.Add(this.btnGetDataStudent);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.comboBoxSchoolStudent);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1151, 35);
-            this.panel3.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Chọn Huyện:";
-            // 
-            // comboBoxDistinctStudent
-            // 
-            this.comboBoxDistinctStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBoxDistinctStudent.FormattingEnabled = true;
-            this.comboBoxDistinctStudent.Location = new System.Drawing.Point(80, 7);
-            this.comboBoxDistinctStudent.Name = "comboBoxDistinctStudent";
-            this.comboBoxDistinctStudent.Size = new System.Drawing.Size(155, 21);
-            this.comboBoxDistinctStudent.TabIndex = 3;
-            // 
-            // btnGetDataStudent
-            // 
-            this.btnGetDataStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnGetDataStudent.Location = new System.Drawing.Point(734, 7);
-            this.btnGetDataStudent.Name = "btnGetDataStudent";
-            this.btnGetDataStudent.Size = new System.Drawing.Size(75, 23);
-            this.btnGetDataStudent.TabIndex = 4;
-            this.btnGetDataStudent.Text = "Lấy dữ liệu";
-            this.btnGetDataStudent.UseVisualStyleBackColor = true;
-            this.btnGetDataStudent.Click += new System.EventHandler(this.btnGetDataStudent_Click);
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(241, 10);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Chọn trường:";
-            // 
-            // comboBoxSchoolStudent
-            // 
-            this.comboBoxSchoolStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBoxSchoolStudent.FormattingEnabled = true;
-            this.comboBoxSchoolStudent.Location = new System.Drawing.Point(315, 7);
-            this.comboBoxSchoolStudent.Name = "comboBoxSchoolStudent";
-            this.comboBoxSchoolStudent.Size = new System.Drawing.Size(413, 21);
-            this.comboBoxSchoolStudent.TabIndex = 1;
-            // 
-            // tabPageMark
-            // 
-            this.tabPageMark.Location = new System.Drawing.Point(4, 22);
-            this.tabPageMark.Name = "tabPageMark";
-            this.tabPageMark.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMark.Size = new System.Drawing.Size(1157, 591);
-            this.tabPageMark.TabIndex = 3;
-            this.tabPageMark.Text = "Lấy điểm theo trường";
-            this.tabPageMark.UseVisualStyleBackColor = true;
-            // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataSource = typeof(GetDataGiaoDuc.APISMAS.Employee);
             // 
             // aliasDataGridViewTextBoxColumn
             // 
@@ -1524,6 +944,601 @@
             this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn1.HeaderText = "YouthLeagueJoinedPlace";
             this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn1.Name = "youthLeagueJoinedPlaceDataGridViewTextBoxColumn1";
             // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataSource = typeof(GetDataGiaoDuc.APISMAS.Employee);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.comboBoxDistinctEmployee);
+            this.panel2.Controls.Add(this.btnGetDataEmployee);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.comboBoxSchoolEmployee);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1151, 35);
+            this.panel2.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(5, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Chọn Huyện:";
+            // 
+            // comboBoxDistinctEmployee
+            // 
+            this.comboBoxDistinctEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxDistinctEmployee.FormattingEnabled = true;
+            this.comboBoxDistinctEmployee.Location = new System.Drawing.Point(80, 7);
+            this.comboBoxDistinctEmployee.Name = "comboBoxDistinctEmployee";
+            this.comboBoxDistinctEmployee.Size = new System.Drawing.Size(155, 21);
+            this.comboBoxDistinctEmployee.TabIndex = 3;
+            this.comboBoxDistinctEmployee.SelectedIndexChanged += new System.EventHandler(this.comboBoxDistinctEmployee_SelectedIndexChanged);
+            // 
+            // btnGetDataEmployee
+            // 
+            this.btnGetDataEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnGetDataEmployee.Location = new System.Drawing.Point(734, 7);
+            this.btnGetDataEmployee.Name = "btnGetDataEmployee";
+            this.btnGetDataEmployee.Size = new System.Drawing.Size(75, 23);
+            this.btnGetDataEmployee.TabIndex = 4;
+            this.btnGetDataEmployee.Text = "Lấy dữ liệu";
+            this.btnGetDataEmployee.UseVisualStyleBackColor = true;
+            this.btnGetDataEmployee.Click += new System.EventHandler(this.btnGetDataEmployee_Click);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(241, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Chọn trường:";
+            // 
+            // comboBoxSchoolEmployee
+            // 
+            this.comboBoxSchoolEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxSchoolEmployee.FormattingEnabled = true;
+            this.comboBoxSchoolEmployee.Location = new System.Drawing.Point(315, 7);
+            this.comboBoxSchoolEmployee.Name = "comboBoxSchoolEmployee";
+            this.comboBoxSchoolEmployee.Size = new System.Drawing.Size(413, 21);
+            this.comboBoxSchoolEmployee.TabIndex = 1;
+            // 
+            // btnExportTeacherExcel
+            // 
+            this.btnExportTeacherExcel.Location = new System.Drawing.Point(1040, 3);
+            this.btnExportTeacherExcel.Name = "btnExportTeacherExcel";
+            this.btnExportTeacherExcel.Size = new System.Drawing.Size(87, 23);
+            this.btnExportTeacherExcel.TabIndex = 5;
+            this.btnExportTeacherExcel.Text = "Xuất ra Excel";
+            this.btnExportTeacherExcel.UseVisualStyleBackColor = true;
+            // 
+            // tabPageStudent
+            // 
+            this.tabPageStudent.Controls.Add(this.dataGridViewStudent);
+            this.tabPageStudent.Controls.Add(this.panel3);
+            this.tabPageStudent.Location = new System.Drawing.Point(4, 22);
+            this.tabPageStudent.Name = "tabPageStudent";
+            this.tabPageStudent.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageStudent.Size = new System.Drawing.Size(1157, 591);
+            this.tabPageStudent.TabIndex = 2;
+            this.tabPageStudent.Text = "Danh sách học sinh";
+            this.tabPageStudent.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewStudent
+            // 
+            this.dataGridViewStudent.AutoGenerateColumns = false;
+            this.dataGridViewStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewStudent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.pupilCodeDataGridViewTextBoxColumn,
+            this.classIDDataGridViewTextBoxColumn,
+            this.fullNameDataGridViewTextBoxColumn,
+            this.birthDateDataGridViewTextBoxColumn,
+            this.birthPlaceDataGridViewTextBoxColumn,
+            this.bloodTypeDataGridViewTextBoxColumn,
+            this.communeDataGridViewTextBoxColumn1,
+            this.communistPartyJoinedDateDataGridViewTextBoxColumn,
+            this.communistPartyJoinedPlaceDataGridViewTextBoxColumn,
+            this.disabledSeverityDataGridViewTextBoxColumn,
+            this.disabledTypeIDDataGridViewTextBoxColumn,
+            this.districtDataGridViewTextBoxColumn1,
+            this.emailDataGridViewTextBoxColumn1,
+            this.enrolmentDateDataGridViewTextBoxColumn,
+            this.areaDataGridViewTextBoxColumn1,
+            this.ethnicDataGridViewTextBoxColumn,
+            this.familyTypeIDDataGridViewTextBoxColumn,
+            this.fatherBirthDateDataGridViewTextBoxColumn,
+            this.fatherFullNameDataGridViewTextBoxColumn,
+            this.fatherJobDataGridViewTextBoxColumn,
+            this.fatherMobileDataGridViewTextBoxColumn,
+            this.foreignLanguageTrainingDataGridViewTextBoxColumn,
+            this.genreDataGridViewTextBoxColumn,
+            this.homeTownDataGridViewTextBoxColumn,
+            this.imageDataGridViewTextBoxColumn,
+            this.isCommunistPartyMemberDataGridViewTextBoxColumn,
+            this.isDisabledDataGridViewTextBoxColumn,
+            this.isResidentInDataGridViewTextBoxColumn,
+            this.isSupportForLearningDataGridViewTextBoxColumn,
+            this.isYoungPioneerMemberDataGridViewTextBoxColumn,
+            this.isYouthLeageMemberDataGridViewTextBoxColumn,
+            this.mobileDataGridViewTextBoxColumn,
+            this.motherBirthDateDataGridViewTextBoxColumn,
+            this.motherFullNameDataGridViewTextBoxColumn,
+            this.motherJobDataGridViewTextBoxColumn,
+            this.motherMobileDataGridViewTextBoxColumn,
+            this.orderIdDataGridViewTextBoxColumn,
+            this.permanentResidentalAddressDataGridViewTextBoxColumn,
+            this.policyRegimeIdDataGridViewTextBoxColumn,
+            this.policyTargetIDDataGridViewTextBoxColumn,
+            this.previousGraduationLevelDataGridViewTextBoxColumn,
+            this.priorityTypeIDDataGridViewTextBoxColumn,
+            this.profileStatusDataGridViewTextBoxColumn,
+            this.provinceDataGridViewTextBoxColumn1,
+            this.pupilProfileIdDataGridViewTextBoxColumn,
+            this.religionDataGridViewTextBoxColumn,
+            this.sponsorBirthDateDataGridViewTextBoxColumn,
+            this.sponsorFullNameDataGridViewTextBoxColumn,
+            this.sponsorJobDataGridViewTextBoxColumn,
+            this.sponsorMobileDataGridViewTextBoxColumn,
+            this.synchronizeIdDataGridViewTextBoxColumn1,
+            this.telephoneDataGridViewTextBoxColumn1,
+            this.tempResidentalAddressDataGridViewTextBoxColumn,
+            this.updateTimeDataGridViewTextBoxColumn1,
+            this.youngPioneerJoinedDateDataGridViewTextBoxColumn,
+            this.youngPioneerJoinedPlaceDataGridViewTextBoxColumn,
+            this.youthLeagueJoinedDateDataGridViewTextBoxColumn,
+            this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn});
+            this.dataGridViewStudent.DataSource = this.pupilProfileBindingSource;
+            this.dataGridViewStudent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewStudent.Location = new System.Drawing.Point(3, 38);
+            this.dataGridViewStudent.Name = "dataGridViewStudent";
+            this.dataGridViewStudent.Size = new System.Drawing.Size(1151, 550);
+            this.dataGridViewStudent.TabIndex = 8;
+            this.dataGridViewStudent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewStudent_CellContentClick);
+            // 
+            // pupilCodeDataGridViewTextBoxColumn
+            // 
+            this.pupilCodeDataGridViewTextBoxColumn.DataPropertyName = "PupilCode";
+            this.pupilCodeDataGridViewTextBoxColumn.HeaderText = "PupilCode";
+            this.pupilCodeDataGridViewTextBoxColumn.Name = "pupilCodeDataGridViewTextBoxColumn";
+            // 
+            // classIDDataGridViewTextBoxColumn
+            // 
+            this.classIDDataGridViewTextBoxColumn.DataPropertyName = "ClassID";
+            this.classIDDataGridViewTextBoxColumn.HeaderText = "ClassID";
+            this.classIDDataGridViewTextBoxColumn.Name = "classIDDataGridViewTextBoxColumn";
+            // 
+            // fullNameDataGridViewTextBoxColumn
+            // 
+            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
+            this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
+            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
+            // 
+            // birthDateDataGridViewTextBoxColumn
+            // 
+            this.birthDateDataGridViewTextBoxColumn.DataPropertyName = "BirthDate";
+            this.birthDateDataGridViewTextBoxColumn.HeaderText = "BirthDate";
+            this.birthDateDataGridViewTextBoxColumn.Name = "birthDateDataGridViewTextBoxColumn";
+            // 
+            // birthPlaceDataGridViewTextBoxColumn
+            // 
+            this.birthPlaceDataGridViewTextBoxColumn.DataPropertyName = "BirthPlace";
+            this.birthPlaceDataGridViewTextBoxColumn.HeaderText = "BirthPlace";
+            this.birthPlaceDataGridViewTextBoxColumn.Name = "birthPlaceDataGridViewTextBoxColumn";
+            // 
+            // bloodTypeDataGridViewTextBoxColumn
+            // 
+            this.bloodTypeDataGridViewTextBoxColumn.DataPropertyName = "BloodType";
+            this.bloodTypeDataGridViewTextBoxColumn.HeaderText = "BloodType";
+            this.bloodTypeDataGridViewTextBoxColumn.Name = "bloodTypeDataGridViewTextBoxColumn";
+            // 
+            // communeDataGridViewTextBoxColumn1
+            // 
+            this.communeDataGridViewTextBoxColumn1.DataPropertyName = "Commune";
+            this.communeDataGridViewTextBoxColumn1.HeaderText = "Commune";
+            this.communeDataGridViewTextBoxColumn1.Name = "communeDataGridViewTextBoxColumn1";
+            // 
+            // communistPartyJoinedDateDataGridViewTextBoxColumn
+            // 
+            this.communistPartyJoinedDateDataGridViewTextBoxColumn.DataPropertyName = "CommunistPartyJoinedDate";
+            this.communistPartyJoinedDateDataGridViewTextBoxColumn.HeaderText = "CommunistPartyJoinedDate";
+            this.communistPartyJoinedDateDataGridViewTextBoxColumn.Name = "communistPartyJoinedDateDataGridViewTextBoxColumn";
+            // 
+            // communistPartyJoinedPlaceDataGridViewTextBoxColumn
+            // 
+            this.communistPartyJoinedPlaceDataGridViewTextBoxColumn.DataPropertyName = "CommunistPartyJoinedPlace";
+            this.communistPartyJoinedPlaceDataGridViewTextBoxColumn.HeaderText = "CommunistPartyJoinedPlace";
+            this.communistPartyJoinedPlaceDataGridViewTextBoxColumn.Name = "communistPartyJoinedPlaceDataGridViewTextBoxColumn";
+            // 
+            // disabledSeverityDataGridViewTextBoxColumn
+            // 
+            this.disabledSeverityDataGridViewTextBoxColumn.DataPropertyName = "DisabledSeverity";
+            this.disabledSeverityDataGridViewTextBoxColumn.HeaderText = "DisabledSeverity";
+            this.disabledSeverityDataGridViewTextBoxColumn.Name = "disabledSeverityDataGridViewTextBoxColumn";
+            // 
+            // disabledTypeIDDataGridViewTextBoxColumn
+            // 
+            this.disabledTypeIDDataGridViewTextBoxColumn.DataPropertyName = "DisabledTypeID";
+            this.disabledTypeIDDataGridViewTextBoxColumn.HeaderText = "DisabledTypeID";
+            this.disabledTypeIDDataGridViewTextBoxColumn.Name = "disabledTypeIDDataGridViewTextBoxColumn";
+            // 
+            // districtDataGridViewTextBoxColumn1
+            // 
+            this.districtDataGridViewTextBoxColumn1.DataPropertyName = "District";
+            this.districtDataGridViewTextBoxColumn1.HeaderText = "District";
+            this.districtDataGridViewTextBoxColumn1.Name = "districtDataGridViewTextBoxColumn1";
+            // 
+            // emailDataGridViewTextBoxColumn1
+            // 
+            this.emailDataGridViewTextBoxColumn1.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn1.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn1.Name = "emailDataGridViewTextBoxColumn1";
+            // 
+            // enrolmentDateDataGridViewTextBoxColumn
+            // 
+            this.enrolmentDateDataGridViewTextBoxColumn.DataPropertyName = "EnrolmentDate";
+            this.enrolmentDateDataGridViewTextBoxColumn.HeaderText = "EnrolmentDate";
+            this.enrolmentDateDataGridViewTextBoxColumn.Name = "enrolmentDateDataGridViewTextBoxColumn";
+            // 
+            // areaDataGridViewTextBoxColumn1
+            // 
+            this.areaDataGridViewTextBoxColumn1.DataPropertyName = "Area";
+            this.areaDataGridViewTextBoxColumn1.HeaderText = "Area";
+            this.areaDataGridViewTextBoxColumn1.Name = "areaDataGridViewTextBoxColumn1";
+            // 
+            // ethnicDataGridViewTextBoxColumn
+            // 
+            this.ethnicDataGridViewTextBoxColumn.DataPropertyName = "Ethnic";
+            this.ethnicDataGridViewTextBoxColumn.HeaderText = "Ethnic";
+            this.ethnicDataGridViewTextBoxColumn.Name = "ethnicDataGridViewTextBoxColumn";
+            // 
+            // familyTypeIDDataGridViewTextBoxColumn
+            // 
+            this.familyTypeIDDataGridViewTextBoxColumn.DataPropertyName = "FamilyTypeID";
+            this.familyTypeIDDataGridViewTextBoxColumn.HeaderText = "FamilyTypeID";
+            this.familyTypeIDDataGridViewTextBoxColumn.Name = "familyTypeIDDataGridViewTextBoxColumn";
+            // 
+            // fatherBirthDateDataGridViewTextBoxColumn
+            // 
+            this.fatherBirthDateDataGridViewTextBoxColumn.DataPropertyName = "FatherBirthDate";
+            this.fatherBirthDateDataGridViewTextBoxColumn.HeaderText = "FatherBirthDate";
+            this.fatherBirthDateDataGridViewTextBoxColumn.Name = "fatherBirthDateDataGridViewTextBoxColumn";
+            // 
+            // fatherFullNameDataGridViewTextBoxColumn
+            // 
+            this.fatherFullNameDataGridViewTextBoxColumn.DataPropertyName = "FatherFullName";
+            this.fatherFullNameDataGridViewTextBoxColumn.HeaderText = "FatherFullName";
+            this.fatherFullNameDataGridViewTextBoxColumn.Name = "fatherFullNameDataGridViewTextBoxColumn";
+            // 
+            // fatherJobDataGridViewTextBoxColumn
+            // 
+            this.fatherJobDataGridViewTextBoxColumn.DataPropertyName = "FatherJob";
+            this.fatherJobDataGridViewTextBoxColumn.HeaderText = "FatherJob";
+            this.fatherJobDataGridViewTextBoxColumn.Name = "fatherJobDataGridViewTextBoxColumn";
+            // 
+            // fatherMobileDataGridViewTextBoxColumn
+            // 
+            this.fatherMobileDataGridViewTextBoxColumn.DataPropertyName = "FatherMobile";
+            this.fatherMobileDataGridViewTextBoxColumn.HeaderText = "FatherMobile";
+            this.fatherMobileDataGridViewTextBoxColumn.Name = "fatherMobileDataGridViewTextBoxColumn";
+            // 
+            // foreignLanguageTrainingDataGridViewTextBoxColumn
+            // 
+            this.foreignLanguageTrainingDataGridViewTextBoxColumn.DataPropertyName = "ForeignLanguageTraining";
+            this.foreignLanguageTrainingDataGridViewTextBoxColumn.HeaderText = "ForeignLanguageTraining";
+            this.foreignLanguageTrainingDataGridViewTextBoxColumn.Name = "foreignLanguageTrainingDataGridViewTextBoxColumn";
+            // 
+            // genreDataGridViewTextBoxColumn
+            // 
+            this.genreDataGridViewTextBoxColumn.DataPropertyName = "Genre";
+            this.genreDataGridViewTextBoxColumn.HeaderText = "Genre";
+            this.genreDataGridViewTextBoxColumn.Name = "genreDataGridViewTextBoxColumn";
+            // 
+            // homeTownDataGridViewTextBoxColumn
+            // 
+            this.homeTownDataGridViewTextBoxColumn.DataPropertyName = "HomeTown";
+            this.homeTownDataGridViewTextBoxColumn.HeaderText = "HomeTown";
+            this.homeTownDataGridViewTextBoxColumn.Name = "homeTownDataGridViewTextBoxColumn";
+            // 
+            // imageDataGridViewTextBoxColumn
+            // 
+            this.imageDataGridViewTextBoxColumn.DataPropertyName = "Image";
+            this.imageDataGridViewTextBoxColumn.HeaderText = "Image";
+            this.imageDataGridViewTextBoxColumn.Name = "imageDataGridViewTextBoxColumn";
+            // 
+            // isCommunistPartyMemberDataGridViewTextBoxColumn
+            // 
+            this.isCommunistPartyMemberDataGridViewTextBoxColumn.DataPropertyName = "IsCommunistPartyMember";
+            this.isCommunistPartyMemberDataGridViewTextBoxColumn.HeaderText = "IsCommunistPartyMember";
+            this.isCommunistPartyMemberDataGridViewTextBoxColumn.Name = "isCommunistPartyMemberDataGridViewTextBoxColumn";
+            // 
+            // isDisabledDataGridViewTextBoxColumn
+            // 
+            this.isDisabledDataGridViewTextBoxColumn.DataPropertyName = "IsDisabled";
+            this.isDisabledDataGridViewTextBoxColumn.HeaderText = "IsDisabled";
+            this.isDisabledDataGridViewTextBoxColumn.Name = "isDisabledDataGridViewTextBoxColumn";
+            // 
+            // isResidentInDataGridViewTextBoxColumn
+            // 
+            this.isResidentInDataGridViewTextBoxColumn.DataPropertyName = "IsResidentIn";
+            this.isResidentInDataGridViewTextBoxColumn.HeaderText = "IsResidentIn";
+            this.isResidentInDataGridViewTextBoxColumn.Name = "isResidentInDataGridViewTextBoxColumn";
+            // 
+            // isSupportForLearningDataGridViewTextBoxColumn
+            // 
+            this.isSupportForLearningDataGridViewTextBoxColumn.DataPropertyName = "IsSupportForLearning";
+            this.isSupportForLearningDataGridViewTextBoxColumn.HeaderText = "IsSupportForLearning";
+            this.isSupportForLearningDataGridViewTextBoxColumn.Name = "isSupportForLearningDataGridViewTextBoxColumn";
+            // 
+            // isYoungPioneerMemberDataGridViewTextBoxColumn
+            // 
+            this.isYoungPioneerMemberDataGridViewTextBoxColumn.DataPropertyName = "IsYoungPioneerMember";
+            this.isYoungPioneerMemberDataGridViewTextBoxColumn.HeaderText = "IsYoungPioneerMember";
+            this.isYoungPioneerMemberDataGridViewTextBoxColumn.Name = "isYoungPioneerMemberDataGridViewTextBoxColumn";
+            // 
+            // isYouthLeageMemberDataGridViewTextBoxColumn
+            // 
+            this.isYouthLeageMemberDataGridViewTextBoxColumn.DataPropertyName = "IsYouthLeageMember";
+            this.isYouthLeageMemberDataGridViewTextBoxColumn.HeaderText = "IsYouthLeageMember";
+            this.isYouthLeageMemberDataGridViewTextBoxColumn.Name = "isYouthLeageMemberDataGridViewTextBoxColumn";
+            // 
+            // mobileDataGridViewTextBoxColumn
+            // 
+            this.mobileDataGridViewTextBoxColumn.DataPropertyName = "Mobile";
+            this.mobileDataGridViewTextBoxColumn.HeaderText = "Mobile";
+            this.mobileDataGridViewTextBoxColumn.Name = "mobileDataGridViewTextBoxColumn";
+            // 
+            // motherBirthDateDataGridViewTextBoxColumn
+            // 
+            this.motherBirthDateDataGridViewTextBoxColumn.DataPropertyName = "MotherBirthDate";
+            this.motherBirthDateDataGridViewTextBoxColumn.HeaderText = "MotherBirthDate";
+            this.motherBirthDateDataGridViewTextBoxColumn.Name = "motherBirthDateDataGridViewTextBoxColumn";
+            // 
+            // motherFullNameDataGridViewTextBoxColumn
+            // 
+            this.motherFullNameDataGridViewTextBoxColumn.DataPropertyName = "MotherFullName";
+            this.motherFullNameDataGridViewTextBoxColumn.HeaderText = "MotherFullName";
+            this.motherFullNameDataGridViewTextBoxColumn.Name = "motherFullNameDataGridViewTextBoxColumn";
+            // 
+            // motherJobDataGridViewTextBoxColumn
+            // 
+            this.motherJobDataGridViewTextBoxColumn.DataPropertyName = "MotherJob";
+            this.motherJobDataGridViewTextBoxColumn.HeaderText = "MotherJob";
+            this.motherJobDataGridViewTextBoxColumn.Name = "motherJobDataGridViewTextBoxColumn";
+            // 
+            // motherMobileDataGridViewTextBoxColumn
+            // 
+            this.motherMobileDataGridViewTextBoxColumn.DataPropertyName = "MotherMobile";
+            this.motherMobileDataGridViewTextBoxColumn.HeaderText = "MotherMobile";
+            this.motherMobileDataGridViewTextBoxColumn.Name = "motherMobileDataGridViewTextBoxColumn";
+            // 
+            // orderIdDataGridViewTextBoxColumn
+            // 
+            this.orderIdDataGridViewTextBoxColumn.DataPropertyName = "OrderId";
+            this.orderIdDataGridViewTextBoxColumn.HeaderText = "OrderId";
+            this.orderIdDataGridViewTextBoxColumn.Name = "orderIdDataGridViewTextBoxColumn";
+            // 
+            // permanentResidentalAddressDataGridViewTextBoxColumn
+            // 
+            this.permanentResidentalAddressDataGridViewTextBoxColumn.DataPropertyName = "PermanentResidentalAddress";
+            this.permanentResidentalAddressDataGridViewTextBoxColumn.HeaderText = "PermanentResidentalAddress";
+            this.permanentResidentalAddressDataGridViewTextBoxColumn.Name = "permanentResidentalAddressDataGridViewTextBoxColumn";
+            // 
+            // policyRegimeIdDataGridViewTextBoxColumn
+            // 
+            this.policyRegimeIdDataGridViewTextBoxColumn.DataPropertyName = "PolicyRegimeId";
+            this.policyRegimeIdDataGridViewTextBoxColumn.HeaderText = "PolicyRegimeId";
+            this.policyRegimeIdDataGridViewTextBoxColumn.Name = "policyRegimeIdDataGridViewTextBoxColumn";
+            // 
+            // policyTargetIDDataGridViewTextBoxColumn
+            // 
+            this.policyTargetIDDataGridViewTextBoxColumn.DataPropertyName = "PolicyTargetID";
+            this.policyTargetIDDataGridViewTextBoxColumn.HeaderText = "PolicyTargetID";
+            this.policyTargetIDDataGridViewTextBoxColumn.Name = "policyTargetIDDataGridViewTextBoxColumn";
+            // 
+            // previousGraduationLevelDataGridViewTextBoxColumn
+            // 
+            this.previousGraduationLevelDataGridViewTextBoxColumn.DataPropertyName = "PreviousGraduationLevel";
+            this.previousGraduationLevelDataGridViewTextBoxColumn.HeaderText = "PreviousGraduationLevel";
+            this.previousGraduationLevelDataGridViewTextBoxColumn.Name = "previousGraduationLevelDataGridViewTextBoxColumn";
+            // 
+            // priorityTypeIDDataGridViewTextBoxColumn
+            // 
+            this.priorityTypeIDDataGridViewTextBoxColumn.DataPropertyName = "PriorityTypeID";
+            this.priorityTypeIDDataGridViewTextBoxColumn.HeaderText = "PriorityTypeID";
+            this.priorityTypeIDDataGridViewTextBoxColumn.Name = "priorityTypeIDDataGridViewTextBoxColumn";
+            // 
+            // profileStatusDataGridViewTextBoxColumn
+            // 
+            this.profileStatusDataGridViewTextBoxColumn.DataPropertyName = "ProfileStatus";
+            this.profileStatusDataGridViewTextBoxColumn.HeaderText = "ProfileStatus";
+            this.profileStatusDataGridViewTextBoxColumn.Name = "profileStatusDataGridViewTextBoxColumn";
+            // 
+            // provinceDataGridViewTextBoxColumn1
+            // 
+            this.provinceDataGridViewTextBoxColumn1.DataPropertyName = "Province";
+            this.provinceDataGridViewTextBoxColumn1.HeaderText = "Province";
+            this.provinceDataGridViewTextBoxColumn1.Name = "provinceDataGridViewTextBoxColumn1";
+            // 
+            // pupilProfileIdDataGridViewTextBoxColumn
+            // 
+            this.pupilProfileIdDataGridViewTextBoxColumn.DataPropertyName = "PupilProfileId";
+            this.pupilProfileIdDataGridViewTextBoxColumn.HeaderText = "PupilProfileId";
+            this.pupilProfileIdDataGridViewTextBoxColumn.Name = "pupilProfileIdDataGridViewTextBoxColumn";
+            // 
+            // religionDataGridViewTextBoxColumn
+            // 
+            this.religionDataGridViewTextBoxColumn.DataPropertyName = "Religion";
+            this.religionDataGridViewTextBoxColumn.HeaderText = "Religion";
+            this.religionDataGridViewTextBoxColumn.Name = "religionDataGridViewTextBoxColumn";
+            // 
+            // sponsorBirthDateDataGridViewTextBoxColumn
+            // 
+            this.sponsorBirthDateDataGridViewTextBoxColumn.DataPropertyName = "SponsorBirthDate";
+            this.sponsorBirthDateDataGridViewTextBoxColumn.HeaderText = "SponsorBirthDate";
+            this.sponsorBirthDateDataGridViewTextBoxColumn.Name = "sponsorBirthDateDataGridViewTextBoxColumn";
+            // 
+            // sponsorFullNameDataGridViewTextBoxColumn
+            // 
+            this.sponsorFullNameDataGridViewTextBoxColumn.DataPropertyName = "SponsorFullName";
+            this.sponsorFullNameDataGridViewTextBoxColumn.HeaderText = "SponsorFullName";
+            this.sponsorFullNameDataGridViewTextBoxColumn.Name = "sponsorFullNameDataGridViewTextBoxColumn";
+            // 
+            // sponsorJobDataGridViewTextBoxColumn
+            // 
+            this.sponsorJobDataGridViewTextBoxColumn.DataPropertyName = "SponsorJob";
+            this.sponsorJobDataGridViewTextBoxColumn.HeaderText = "SponsorJob";
+            this.sponsorJobDataGridViewTextBoxColumn.Name = "sponsorJobDataGridViewTextBoxColumn";
+            // 
+            // sponsorMobileDataGridViewTextBoxColumn
+            // 
+            this.sponsorMobileDataGridViewTextBoxColumn.DataPropertyName = "SponsorMobile";
+            this.sponsorMobileDataGridViewTextBoxColumn.HeaderText = "SponsorMobile";
+            this.sponsorMobileDataGridViewTextBoxColumn.Name = "sponsorMobileDataGridViewTextBoxColumn";
+            // 
+            // synchronizeIdDataGridViewTextBoxColumn1
+            // 
+            this.synchronizeIdDataGridViewTextBoxColumn1.DataPropertyName = "SynchronizeId";
+            this.synchronizeIdDataGridViewTextBoxColumn1.HeaderText = "SynchronizeId";
+            this.synchronizeIdDataGridViewTextBoxColumn1.Name = "synchronizeIdDataGridViewTextBoxColumn1";
+            // 
+            // telephoneDataGridViewTextBoxColumn1
+            // 
+            this.telephoneDataGridViewTextBoxColumn1.DataPropertyName = "Telephone";
+            this.telephoneDataGridViewTextBoxColumn1.HeaderText = "Telephone";
+            this.telephoneDataGridViewTextBoxColumn1.Name = "telephoneDataGridViewTextBoxColumn1";
+            // 
+            // tempResidentalAddressDataGridViewTextBoxColumn
+            // 
+            this.tempResidentalAddressDataGridViewTextBoxColumn.DataPropertyName = "TempResidentalAddress";
+            this.tempResidentalAddressDataGridViewTextBoxColumn.HeaderText = "TempResidentalAddress";
+            this.tempResidentalAddressDataGridViewTextBoxColumn.Name = "tempResidentalAddressDataGridViewTextBoxColumn";
+            // 
+            // updateTimeDataGridViewTextBoxColumn1
+            // 
+            this.updateTimeDataGridViewTextBoxColumn1.DataPropertyName = "UpdateTime";
+            this.updateTimeDataGridViewTextBoxColumn1.HeaderText = "UpdateTime";
+            this.updateTimeDataGridViewTextBoxColumn1.Name = "updateTimeDataGridViewTextBoxColumn1";
+            // 
+            // youngPioneerJoinedDateDataGridViewTextBoxColumn
+            // 
+            this.youngPioneerJoinedDateDataGridViewTextBoxColumn.DataPropertyName = "YoungPioneerJoinedDate";
+            this.youngPioneerJoinedDateDataGridViewTextBoxColumn.HeaderText = "YoungPioneerJoinedDate";
+            this.youngPioneerJoinedDateDataGridViewTextBoxColumn.Name = "youngPioneerJoinedDateDataGridViewTextBoxColumn";
+            // 
+            // youngPioneerJoinedPlaceDataGridViewTextBoxColumn
+            // 
+            this.youngPioneerJoinedPlaceDataGridViewTextBoxColumn.DataPropertyName = "YoungPioneerJoinedPlace";
+            this.youngPioneerJoinedPlaceDataGridViewTextBoxColumn.HeaderText = "YoungPioneerJoinedPlace";
+            this.youngPioneerJoinedPlaceDataGridViewTextBoxColumn.Name = "youngPioneerJoinedPlaceDataGridViewTextBoxColumn";
+            // 
+            // youthLeagueJoinedDateDataGridViewTextBoxColumn
+            // 
+            this.youthLeagueJoinedDateDataGridViewTextBoxColumn.DataPropertyName = "YouthLeagueJoinedDate";
+            this.youthLeagueJoinedDateDataGridViewTextBoxColumn.HeaderText = "YouthLeagueJoinedDate";
+            this.youthLeagueJoinedDateDataGridViewTextBoxColumn.Name = "youthLeagueJoinedDateDataGridViewTextBoxColumn";
+            // 
+            // youthLeagueJoinedPlaceDataGridViewTextBoxColumn
+            // 
+            this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn.DataPropertyName = "YouthLeagueJoinedPlace";
+            this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn.HeaderText = "YouthLeagueJoinedPlace";
+            this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn.Name = "youthLeagueJoinedPlaceDataGridViewTextBoxColumn";
+            // 
+            // pupilProfileBindingSource
+            // 
+            this.pupilProfileBindingSource.DataSource = typeof(GetDataGiaoDuc.APISMAS.PupilProfile);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnExportStudent);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.comboBoxDistinctStudent);
+            this.panel3.Controls.Add(this.btnGetDataStudent);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.comboBoxSchoolStudent);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1151, 35);
+            this.panel3.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(5, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Chọn Huyện:";
+            // 
+            // comboBoxDistinctStudent
+            // 
+            this.comboBoxDistinctStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxDistinctStudent.FormattingEnabled = true;
+            this.comboBoxDistinctStudent.Location = new System.Drawing.Point(80, 7);
+            this.comboBoxDistinctStudent.Name = "comboBoxDistinctStudent";
+            this.comboBoxDistinctStudent.Size = new System.Drawing.Size(155, 21);
+            this.comboBoxDistinctStudent.TabIndex = 3;
+            // 
+            // btnGetDataStudent
+            // 
+            this.btnGetDataStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnGetDataStudent.Location = new System.Drawing.Point(734, 7);
+            this.btnGetDataStudent.Name = "btnGetDataStudent";
+            this.btnGetDataStudent.Size = new System.Drawing.Size(75, 23);
+            this.btnGetDataStudent.TabIndex = 4;
+            this.btnGetDataStudent.Text = "Lấy dữ liệu";
+            this.btnGetDataStudent.UseVisualStyleBackColor = true;
+            this.btnGetDataStudent.Click += new System.EventHandler(this.btnGetDataStudent_Click);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(241, 10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Chọn trường:";
+            // 
+            // comboBoxSchoolStudent
+            // 
+            this.comboBoxSchoolStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxSchoolStudent.FormattingEnabled = true;
+            this.comboBoxSchoolStudent.Location = new System.Drawing.Point(315, 7);
+            this.comboBoxSchoolStudent.Name = "comboBoxSchoolStudent";
+            this.comboBoxSchoolStudent.Size = new System.Drawing.Size(413, 21);
+            this.comboBoxSchoolStudent.TabIndex = 1;
+            // 
+            // tabPageMark
+            // 
+            this.tabPageMark.Location = new System.Drawing.Point(4, 22);
+            this.tabPageMark.Name = "tabPageMark";
+            this.tabPageMark.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageMark.Size = new System.Drawing.Size(1157, 591);
+            this.tabPageMark.TabIndex = 3;
+            this.tabPageMark.Text = "Lấy điểm theo trường";
+            this.tabPageMark.UseVisualStyleBackColor = true;
+            // 
+            // btnExportStudent
+            // 
+            this.btnExportStudent.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnExportStudent.Location = new System.Drawing.Point(1071, 7);
+            this.btnExportStudent.Name = "btnExportStudent";
+            this.btnExportStudent.Size = new System.Drawing.Size(75, 23);
+            this.btnExportStudent.TabIndex = 5;
+            this.btnExportStudent.Text = "Xuất Excel";
+            this.btnExportStudent.UseVisualStyleBackColor = true;
+            this.btnExportStudent.Click += new System.EventHandler(this.btnExportStudent_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1542,6 +1557,7 @@
             this.panel1.PerformLayout();
             this.tabPageTeacher.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tabPageStudent.ResumeLayout(false);
@@ -1549,7 +1565,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pupilProfileBindingSource)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1730,6 +1745,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn youthLeagueJoinedDateDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn youthLeagueJoinedPlaceDataGridViewTextBoxColumn1;
         private System.Windows.Forms.BindingSource employeeBindingSource;
+        private System.Windows.Forms.Button btnExportStudent;
     }
 }
 
