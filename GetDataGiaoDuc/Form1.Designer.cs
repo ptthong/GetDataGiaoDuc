@@ -1124,6 +1124,7 @@
             this.comboBoxSchoolStudent.Name = "comboBoxSchoolStudent";
             this.comboBoxSchoolStudent.Size = new System.Drawing.Size(1095, 39);
             this.comboBoxSchoolStudent.TabIndex = 1;
+            this.comboBoxSchoolStudent.SelectedIndexChanged += new System.EventHandler(this.comboBoxSchoolStudent_SelectedIndexChanged);
             // 
             // tabPageMark
             // 

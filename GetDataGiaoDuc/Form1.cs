@@ -340,10 +340,13 @@ namespace GetDataGiaoDuc
                             ws.Cells[1, 1] = "Số thứ tự";
                             ws.Cells[1, 2] = "Mã học sinh";
                             ws.Cells[1, 3] = "Họ và tên";
-                            ws.Cells[1, 4] = "Ngày sinh";
-                            ws.Cells[1, 5] = "Nơi sinh";
-                            ws.Cells[1, 6] = "Dân tộc";
-                            ws.Cells[1, 7] = "Tên lớp";
+                            ws.Cells[1, 4] = "Giới tính";
+                            ws.Cells[1, 5] = "Lớp";
+                            ws.Cells[1, 6] = "Ngày sinh";
+                            ws.Cells[1, 7] = "Nơi sinh";
+                            ws.Cells[1, 8] = "Tỉnh thành";
+                            ws.Cells[1, 9] = "Địa chỉ";
+                            ws.Cells[1, 10] = "Dân tộc";
 
                             int index = 1;
                             foreach (PupilProfile pf in arrStudent)
@@ -353,9 +356,7 @@ namespace GetDataGiaoDuc
                                 ws.Cells[index, 1] = index - 1;
                                 ws.Cells[index, 2] = pf.PupilCode;
                                 ws.Cells[index, 3] = pf.FullName;
-                                ws.Cells[index, 4] = pf.BirthDate;
-                                ws.Cells[index, 5] = pf.BirthPlace;
-                                ws.Cells[index, 6] = pf.Ethnic;
+                                ws.Cells[index, 4] = pf.Genre;
                                 String classname = "";                        
                                 for (int j = 0; j < cProfile.Length; j++)
 
@@ -366,7 +367,13 @@ namespace GetDataGiaoDuc
                                         break;
                                         //else ws.Cells[index, 7] = "Looix";
                                     }
-                                ws.Cells[index, 7].value = "'"+classname;
+                                ws.Cells[index, 5].value = "'"+classname;
+                                ws.Cells[index, 6] = pf.BirthPlace;
+                                ws.Cells[index, 7] = pf.BirthPlace;
+                                ws.Cells[index, 8] = pf.Province;
+                                ws.Cells[index, 9] = pf.Area;
+                                ws.Cells[index, 10] = pf.Ethnic;
+                                
 
                             }
                             //Lưu file
@@ -415,21 +422,33 @@ namespace GetDataGiaoDuc
             //Xóa hết dữ liệu trường trong combobox
             comboBoxSchoolStudent.Text = "";
             comboBoxSchoolStudent.Items.Clear();
+
             ComboBox cb = sender as ComboBox;
 
             Item itemSelected = (Item)cb.SelectedItem;
             //Debug.Print(itemSelected.name);
-
+            List<Item> listSchoolItem = new List<Item>();
             //Kiểm tra có phải là dữ liệu toàn tỉnh hay không?
-            if (itemSelected.value == 10) {
-                foreach (Item i in arrSchoolName) comboBoxSchoolStudent.Items.Add(i);
+            if (itemSelected.value == 10)
+            {
+                foreach (Item i in arrSchoolName) listSchoolItem.Add(i);
             }
- 
-            else 
-                foreach (Item i in arrSchoolName) {
-                    if (i.parent == itemSelected.value) comboBoxSchoolStudent.Items.Add(i);
+
+            else
+                foreach (Item i in arrSchoolName)
+                {
+                    if (i.parent == itemSelected.value) listSchoolItem.Add(i);
                 }
-            
+            AutoCompleteStringCollection acsc = new AutoCompleteStringCollection();
+         
+            comboBoxSchoolStudent.Items.AddRange(listSchoolItem.ToArray());
+
+
+        }
+
+        private void comboBoxSchoolStudent_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
