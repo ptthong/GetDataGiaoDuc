@@ -20,9 +20,11 @@ namespace GetDataGiaoDuc
         public SchoolProfile[] arrSchool;
         public PupilProfile[] arrStudent;
         public Employee[] arrEmployee;
-        public List<Item> arrDistinctName;
-        public List<Item> arrSchoolName;
+        public List<Item> arrDistinctName = new List<Item>();
+        public List<Item> arrSchoolName = new List<Item>();
         public String fileDanhSachTruong = @"\DanhSachTruong.xls";
+        private String username = "test";
+        private String password = "test123";
 
         public Form1()
         {
@@ -33,35 +35,62 @@ namespace GetDataGiaoDuc
 
 
         }
-       
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            arrDistinctName = new List<Item>();
-            arrSchoolName = new List<Item>();
 
-            
+
+
         }
 
         private void UIInit()
         {
+            //khởi tạo dữ liệu cho comboBox Huyện
+            //arrDistinctName = new List<Item>();
+            arrDistinctName.Add(new Item("A Lưới", 1));
+            arrDistinctName.Add(new Item("Hương Thủy", 2));
+            arrDistinctName.Add(new Item("Hương Trà", 3));
+            arrDistinctName.Add(new Item("Thành phố Huế", 4));
+            arrDistinctName.Add(new Item("Nam Đông", 5));
+            arrDistinctName.Add(new Item("Phú Lộc", 6));
+            arrDistinctName.Add(new Item("Phú Vang", 7));
+            arrDistinctName.Add(new Item("Phong Điền", 8));
+            arrDistinctName.Add(new Item("Quảng Điền", 9));
+            arrDistinctName.Add(new Item("Toàn tỉnh", 10));
+
+            //đẩy dữ liệu vào combobox Huyện.
+            foreach (Item i in arrDistinctName)
+            {
+                comboBoxDistinctEmployee.Items.Add(i);
+                comboBoxDistinctStudent.Items.Add(i);
+
+            }
+            //thiết lập giá trị mặc định cho combobox Huyện
+            comboBoxDistinctEmployee.SelectedIndex = 9;
+            comboBoxDistinctStudent.SelectedIndex = 9;
+
+            //thiết lập giá trị cho combobox trường
+            //arrSchoolName = new List<Item>();
             //Lấy dữ liệu trường từ file excel
-            getDataFromFile(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName+fileDanhSachTruong);
+            getDataFromFile(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + fileDanhSachTruong);
+            foreach (Item i in arrSchoolName)
+            {
+                comboBoxSchoolEmployee.Items.Add(i);
+                comboBoxSchoolStudent.Items.Add(i);
+            }
 
 
         }
 
         public void getDataFromFile(String filePath)
         {
-            try { 
+            try {
                 // create the Application object we can use in the member functions.
                 Microsoft.Office.Interop.Excel.Application _excelApp = new Microsoft.Office.Interop.Excel.Application();
-                _excelApp.Visible = true;
+                _excelApp.Visible = false;
                 //open the workbook
-                Workbook workbook = _excelApp.Workbooks.Open(filePath,
-                    Type.Missing, Type.Missing, Type.Missing, Type.Missing,
-                    Type.Missing, Type.Missing, Type.Missing, Type.Missing,
-                    Type.Missing, Type.Missing, Type.Missing, Type.Missing,
-                    Type.Missing, Type.Missing);
+                Workbook workbook = _excelApp.Workbooks.Open(filePath, ReadOnly: true);
+
 
                 //select the first sheet        
                 Worksheet worksheet = (Worksheet)workbook.Worksheets[1];
@@ -76,19 +105,25 @@ namespace GetDataGiaoDuc
                 //access the cells
                 for (int row = 2; row <= worksheet.UsedRange.Rows.Count; ++row)
                 {
+
+
+                    Item i = new Item(valueArray[row, 5].ToString(), int.Parse(valueArray[row, 2].ToString()), int.Parse(valueArray[row, 4].ToString()));
+                    arrSchoolName.Add(i);
+                    //Debug.Print(""+i.value+"-----"+i.name+"-----"+i.parent);
+                    /*
                     for (int col = 2; col <= worksheet.UsedRange.Columns.Count; ++col)
                     {
                         //access each cell
                     
                         Debug.Print(valueArray[row, col].ToString());
-                    }
+                    */
                 }
 
                 //clean up stuffs
                 workbook.Close(false, Type.Missing, Type.Missing);
                 _excelApp.Quit();
-                }
-            catch(Exception es)
+            }
+            catch (Exception es)
             {
                 MessageBox.Show(es.ToString(), "Lỗi khi đọc dữ liệu trường từ file", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -97,8 +132,8 @@ namespace GetDataGiaoDuc
         private void btnGetSchool_Click(object sender, EventArgs e)
         {
             GiaoDucClient client = new GiaoDucClient();
-            client.ClientCredentials.UserName.UserName = "test";
-            client.ClientCredentials.UserName.Password = "test123";
+            client.ClientCredentials.UserName.UserName = this.username;
+            client.ClientCredentials.UserName.Password = this.password;
             client.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.None;
 
             BindingList<SchoolProfile> sPList = new BindingList<SchoolProfile>();
@@ -112,16 +147,16 @@ namespace GetDataGiaoDuc
                     sPList.Add(arrSchool[i]);
                 }
 
-            labelNumberSchool.Text = "Tổng số trường: " + arrSchool.Length;
-            schoolProfileBindingSource.DataSource = sPList;
-                
+                labelNumberSchool.Text = "Tổng số trường: " + arrSchool.Length;
+                schoolProfileBindingSource.DataSource = sPList;
+
             }
             catch (Exception es)
             {
-                MessageBox.Show(es.ToString(), "Lỗi kết nối đến máy chủ", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(es.ToString(), "Lỗi kết nối đến máy chủ", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            
+
         }
         public class Item
         {
@@ -148,115 +183,7 @@ namespace GetDataGiaoDuc
 
         private void btnExportShoolExcel_Click(object sender, EventArgs e)
         {
-            if(arrSchool != null)
-            {
-
-                    using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Excel workbook|*.xls" })
-                    {
-                        if (sfd.ShowDialog() == DialogResult.OK)
-                        {
-                            String fileName = sfd.FileName;
-                            Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
-                            Workbook wb = excel.Workbooks.Add(XlSheetType.xlWorksheet);
-                            Worksheet ws = excel.ActiveSheet;
-                            ws.EnableSelection = Microsoft.Office.Interop.Excel.XlEnableSelection.xlNoSelection;
-                            excel.Visible = false;
-                            //Đặt tên cột trong file Excel
-                            ws.Cells[1, 1] = "Số thứ tự";
-                            ws.Cells[1, 2] = "Mã trường";
-                            ws.Cells[1, 3] = "Cấp học";
-                            ws.Cells[1, 4] = "Mã huyện";
-                            ws.Cells[1, 5] = "Tên trường";
-                            ws.Cells[1, 6] = "User name";
-
-                            int index = 1;
-                            foreach (SchoolProfile sf in arrSchool)
-                                {
-                                    index++;
-                                    ws.Cells[index, 1] = index - 1;
-                                    ws.Cells[index, 2] = sf.SchoolProfileID;
-                                    ws.Cells[index, 3] = sf.EducationGrade.ToString();
-                                    ws.Cells[index, 4] = sf.District;
-                                    ws.Cells[index, 5] = sf.SchoolName;
-                                    ws.Cells[index, 6] = sf.UserName;
-                                }
-                            //Lưu file
-                            ws.SaveAs(fileName, XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing, true, false, XlSaveAsAccessMode.xlNoChange, XlSaveConflictResolution.xlLocalSessionChanges, Type.Missing);
-                            excel.Quit();
-                            }
-                        }
-                
-                    }
-            else MessageBox.Show("Danh sách trường hiện tại đang trống, vui lòng lấy danh sách từ cổng thông tin", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
-
-        private void btnGetDataStudent_Click(object sender, EventArgs e)
-        {
-            GiaoDucClient client = new GiaoDucClient();
-            client.ClientCredentials.UserName.UserName = "test";
-            client.ClientCredentials.UserName.Password = "test123";
-            client.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.None;
-
-
-            BindingList<PupilProfile> studentList = new BindingList<PupilProfile>();
-
-            try
-            {
-                arrStudent= client.GetPupilProfile(int.Parse(comboBoxSchoolStudent.Text), 2017,2000,1);
-                client.Close();
-                for (int i = 0; i < arrStudent.Length; i++)
-                {
-
-                    Console.WriteLine("\n"+arrStudent[i].PupilCode);
-                    studentList.Add(arrStudent[i]);
-                }
-
-                //labelNumberSchool.Text = "Tổng số trường: " + arrSchool.Length;
-                pupilProfileBindingSource.DataSource = studentList;
-                MessageBox.Show(arrStudent[2].FullName, "Kết quả", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception es)
-            {
-                MessageBox.Show(es.ToString(), "Lỗi kết nối đến máy chủ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void btnGetDataEmployee_Click(object sender, EventArgs e)
-        {
-            GiaoDucClient client = new GiaoDucClient();
-            client.ClientCredentials.UserName.UserName = "test";
-            client.ClientCredentials.UserName.Password = "test123";
-            client.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.None;
-
-            BindingList<Employee> eList = new BindingList<Employee>();
-
-            try
-            {
-                arrEmployee = client.GetEmployee(int.Parse(comboBoxSchoolEmployee.Text));
-                client.Close();
-                for (int i = 0; i < arrEmployee.Length; i++)
-                {
-                    eList.Add(arrEmployee[i]);
-                }
-
-                labelNumberSchool.Text = "Tổng số trường: " + arrSchool.Length;
-                employeeBindingSource.DataSource = eList;
-
-            }
-            catch (Exception es)
-            {
-                MessageBox.Show(es.ToString(), "Lỗi kết nối đến máy chủ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void dataGridViewStudent_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void btnExportStudent_Click(object sender, EventArgs e)
-        {
-            if (arrStudent != null)
+            if (arrSchool != null)
             {
 
                 using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Excel workbook|*.xls" })
@@ -271,24 +198,22 @@ namespace GetDataGiaoDuc
                         excel.Visible = false;
                         //Đặt tên cột trong file Excel
                         ws.Cells[1, 1] = "Số thứ tự";
-                        ws.Cells[1, 2] = "Mã học sinh";
-                        ws.Cells[1, 3] = "Họ và tên";
-                        ws.Cells[1, 4] = "Ngày sinh";
-                        ws.Cells[1, 5] = "Nơi sinh";
-                        ws.Cells[1, 6] = "Dân tộc";
-                        ws.Cells[1, 7] = "Class ID";
+                        ws.Cells[1, 2] = "Mã trường";
+                        ws.Cells[1, 3] = "Cấp học";
+                        ws.Cells[1, 4] = "Mã huyện";
+                        ws.Cells[1, 5] = "Tên trường";
+                        ws.Cells[1, 6] = "User name";
 
                         int index = 1;
-                        foreach (PupilProfile pf in arrStudent)
+                        foreach (SchoolProfile sf in arrSchool)
                         {
                             index++;
                             ws.Cells[index, 1] = index - 1;
-                            ws.Cells[index, 2] = pf.PupilCode;
-                            ws.Cells[index, 3] = pf.FullName;
-                            ws.Cells[index, 4] = pf.BirthDate;
-                            ws.Cells[index, 5] = pf.BirthPlace;
-                            ws.Cells[index, 6] = pf.Ethnic;
-                            ws.Cells[index, 7] = pf.ClassID;
+                            ws.Cells[index, 2] = sf.SchoolProfileID;
+                            ws.Cells[index, 3] = sf.EducationGrade.ToString();
+                            ws.Cells[index, 4] = sf.District;
+                            ws.Cells[index, 5] = sf.SchoolName;
+                            ws.Cells[index, 6] = sf.UserName;
                         }
                         //Lưu file
                         ws.SaveAs(fileName, XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing, true, false, XlSaveAsAccessMode.xlNoChange, XlSaveConflictResolution.xlLocalSessionChanges, Type.Missing);
@@ -300,9 +225,211 @@ namespace GetDataGiaoDuc
             else MessageBox.Show("Danh sách trường hiện tại đang trống, vui lòng lấy danh sách từ cổng thông tin", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        private void btnGetDataStudent_Click(object sender, EventArgs e)
+        {
+            GiaoDucClient client = new GiaoDucClient();
+            client.ClientCredentials.UserName.UserName = this.username;
+            client.ClientCredentials.UserName.Password = this.password;
+            client.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.None;
+
+
+            BindingList<PupilProfile> studentList = new BindingList<PupilProfile>();
+
+            try
+            {
+                Item itemSelect = comboBoxSchoolStudent.SelectedItem as Item;
+                arrStudent = client.GetPupilProfile(itemSelect.value, 2017, 2000, 1);
+                client.Close();
+                labelSumStudent.Text = "Tổng số học sinh: " + arrStudent.Length;
+                for (int i = 0; i < arrStudent.Length; i++)
+                {
+
+                    Console.WriteLine("\n" + arrStudent[i].PupilCode);
+                    studentList.Add(arrStudent[i]);
+                }
+
+                //labelNumberSchool.Text = "Tổng số trường: " + arrSchool.Length;
+                pupilProfileBindingSource.DataSource = studentList;
+                MessageBox.Show("Dkm thành công !!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Chọn trường trong danh sách ", "Lỗi con mẹ nó rồi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception es)
+            {
+                MessageBox.Show(es.ToString(), "Lỗi kết nối đến máy chủ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnGetDataEmployee_Click(object sender, EventArgs e)
+        {
+            GiaoDucClient client = new GiaoDucClient();
+            client.ClientCredentials.UserName.UserName = this.username;
+            client.ClientCredentials.UserName.Password = this.password;
+            client.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.None;
+
+            BindingList<Employee> eList = new BindingList<Employee>();
+
+            try
+            {
+                //lấy truongID từ combobox
+                Item item = (Item)comboBoxSchoolEmployee.SelectedItem;
+                //Debug.Print(item.value.ToString());
+                arrEmployee = client.GetEmployee(item.value);
+                client.Close();
+                for (int i = 0; i < arrEmployee.Length; i++)
+                {
+                    eList.Add(arrEmployee[i]);
+                }
+
+                labelNumberSchool.Text = "Tổng số trường: " + arrSchool.Length;
+                employeeBindingSource.DataSource = eList;
+
+            }
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Chọn trường trong danh sách ", "Lỗi con mẹ nó rồi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception es)
+            {
+                MessageBox.Show(es.ToString(), "Lỗi kết nối đến máy chủ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dataGridViewStudent_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnExportStudent_Click(object sender, EventArgs e)
+        {
+
+            GiaoDucClient client = new GiaoDucClient();
+            client.ClientCredentials.UserName.UserName = this.username;
+            client.ClientCredentials.UserName.Password = this.password;
+            client.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.None;
+
+            ClassProfile[] cProfile;
+
+            try
+            {
+                Item i = comboBoxSchoolStudent.SelectedItem as Item;
+                cProfile = client.GetClassProfile(i.value, 2017);
+                for(int j=0; j<cProfile.Length; j++)
+                Debug.Print(cProfile[j].ClassProfileId+"-------------"+cProfile[j].ClassName);
+
+                if (arrStudent != null)
+                {
+
+                    using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Excel workbook|*.xls" })
+                    {
+                        sfd.FileName = comboBoxSchoolStudent.Text;
+                        if (sfd.ShowDialog() == DialogResult.OK)
+                        {
+                            String fileName = sfd.FileName;
+                            Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+                            Workbook wb = excel.Workbooks.Add(XlSheetType.xlWorksheet);
+                            Worksheet ws = excel.ActiveSheet;
+                            //ws.EnableSelection = Microsoft.Office.Interop.Excel.XlEnableSelection.xlNoSelection;
+                            ws.UsedRange.NumberFormat = "@";
+                            
+                            excel.Visible = false;
+                            //Đặt tên cột trong file Excel
+                            ws.Cells[1, 1] = "Số thứ tự";
+                            ws.Cells[1, 2] = "Mã học sinh";
+                            ws.Cells[1, 3] = "Họ và tên";
+                            ws.Cells[1, 4] = "Ngày sinh";
+                            ws.Cells[1, 5] = "Nơi sinh";
+                            ws.Cells[1, 6] = "Dân tộc";
+                            ws.Cells[1, 7] = "Tên lớp";
+
+                            int index = 1;
+                            foreach (PupilProfile pf in arrStudent)
+                            {
+                                index++;
+
+                                ws.Cells[index, 1] = index - 1;
+                                ws.Cells[index, 2] = pf.PupilCode;
+                                ws.Cells[index, 3] = pf.FullName;
+                                ws.Cells[index, 4] = pf.BirthDate;
+                                ws.Cells[index, 5] = pf.BirthPlace;
+                                ws.Cells[index, 6] = pf.Ethnic;
+                                String classname = "";                        
+                                for (int j = 0; j < cProfile.Length; j++)
+
+                                    if (pf.ClassID == cProfile[j].ClassProfileId)
+                                    {
+                                        classname = cProfile[j].ClassName;
+                                        Debug.Print("Tìm được tên lớp: " + classname);
+                                        break;
+                                        //else ws.Cells[index, 7] = "Looix";
+                                    }
+                                ws.Cells[index, 7].value = "'"+classname;
+
+                            }
+                            //Lưu file
+                            ws.SaveAs(fileName, XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing, true, false, XlSaveAsAccessMode.xlNoChange, XlSaveConflictResolution.xlLocalSessionChanges, Type.Missing);
+                            excel.Quit();
+                        }
+                    }
+
+                }
+                else MessageBox.Show("Danh sách trường hiện tại đang trống, vui lòng lấy danh sách từ cổng thông tin", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+             }
+            catch(Exception es)
+            {
+                MessageBox.Show("Không lấy được danh sách lớp, vui lòng kiểm tra lại\n"+es.ToString(), "Lỗi CMNR!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+} 
+
         private void comboBoxDistinctEmployee_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+            //Xóa hết dữ liệu trường trong combobox
+            comboBoxSchoolEmployee.Text = "";
+            comboBoxSchoolEmployee.Items.Clear();
+            ComboBox cb = sender as ComboBox;
+
+            Item itemSelected = (Item)cb.SelectedItem;
+            //Debug.Print(itemSelected.name);
+
+            //Kiểm tra có phải là dữ liệu toàn tỉnh hay không?
+            if (itemSelected.value == 10)
+            {
+                foreach (Item i in arrSchoolName) comboBoxSchoolEmployee.Items.Add(i);
+            }
+
+            else
+                foreach (Item i in arrSchoolName)
+                {
+                    if (i.parent == itemSelected.value) comboBoxSchoolEmployee.Items.Add(i);
+                }
+           
+        }
+
+        private void comboBoxDistinctStudent_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Xóa hết dữ liệu trường trong combobox
+            comboBoxSchoolStudent.Text = "";
+            comboBoxSchoolStudent.Items.Clear();
+            ComboBox cb = sender as ComboBox;
+
+            Item itemSelected = (Item)cb.SelectedItem;
+            //Debug.Print(itemSelected.name);
+
+            //Kiểm tra có phải là dữ liệu toàn tỉnh hay không?
+            if (itemSelected.value == 10) {
+                foreach (Item i in arrSchoolName) comboBoxSchoolStudent.Items.Add(i);
+            }
+ 
+            else 
+                foreach (Item i in arrSchoolName) {
+                    if (i.parent == itemSelected.value) comboBoxSchoolStudent.Items.Add(i);
+                }
+            
         }
     }
 }
