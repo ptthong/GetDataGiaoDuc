@@ -369,7 +369,7 @@ namespace GetDataGiaoDuc
                                     }
                                 ws.Cells[index, 5].value = "'"+classname;
                                 ws.Cells[index, 6] = pf.BirthPlace;
-                                ws.Cells[index, 7] = pf.BirthPlace;
+                                ws.Cells[index, 7] = pf.BirthDate;
                                 ws.Cells[index, 8] = pf.Province;
                                 ws.Cells[index, 9] = pf.Area;
                                 ws.Cells[index, 10] = pf.Ethnic;
