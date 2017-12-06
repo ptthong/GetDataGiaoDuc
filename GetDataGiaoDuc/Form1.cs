@@ -10,6 +10,7 @@ using System.IO;
 using System.Linq;
 using System.ServiceModel.Security;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,7 +19,8 @@ namespace GetDataGiaoDuc
     public partial class Form1 : Form
     {
         public SchoolProfile[] arrSchool;
-        public PupilProfile[] arrStudent;
+        //public PupilProfile[] arrStudent;
+        public List<PupilProfile> listStudent;
         public Employee[] arrEmployee;
         public List<Item> arrDistinctName = new List<Item>();
         public List<Item> arrSchoolName = new List<Item>();
@@ -45,6 +47,8 @@ namespace GetDataGiaoDuc
 
         private void UIInit()
         {
+            listStudent = new List<PupilProfile>();
+
             //khởi tạo dữ liệu cho comboBox Huyện
             //arrDistinctName = new List<Item>();
             arrDistinctName.Add(new Item("A Lưới", 1));
@@ -227,29 +231,37 @@ namespace GetDataGiaoDuc
 
         private void btnGetDataStudent_Click(object sender, EventArgs e)
         {
+            //listStudent.Clear();
+            //dataGridViewStudent.Rows.Clear();
+            //dataGridViewStudent.Refresh();
+
             GiaoDucClient client = new GiaoDucClient();
             client.ClientCredentials.UserName.UserName = this.username;
             client.ClientCredentials.UserName.Password = this.password;
             client.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.None;
 
 
-            BindingList<PupilProfile> studentList = new BindingList<PupilProfile>();
+            BindingList<PupilProfile> listStudentBiding = new BindingList<PupilProfile>();
 
             try
             {
                 Item itemSelect = comboBoxSchoolStudent.SelectedItem as Item;
-                arrStudent = client.GetPupilProfile(itemSelect.value, 2017, 2000, 1);
+                PupilProfile[] arrStudent = client.GetPupilProfile(itemSelect.value, 2017, 2000, 1);
                 client.Close();
+
                 labelSumStudent.Text = "Tổng số học sinh: " + arrStudent.Length;
                 for (int i = 0; i < arrStudent.Length; i++)
                 {
 
                     Console.WriteLine("\n" + arrStudent[i].PupilCode);
-                    studentList.Add(arrStudent[i]);
+                    listStudent.Add(arrStudent[i]);
                 }
 
+
+                listStudent.Sort(new NameComparer());
+                //listStudentBiding = listStudent;
                 //labelNumberSchool.Text = "Tổng số trường: " + arrSchool.Length;
-                pupilProfileBindingSource.DataSource = studentList;
+                pupilProfileBindingSource.DataSource = listStudent;
                 MessageBox.Show("Dkm thành công !!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
@@ -278,12 +290,14 @@ namespace GetDataGiaoDuc
                 Item item = (Item)comboBoxSchoolEmployee.SelectedItem;
                 //Debug.Print(item.value.ToString());
                 arrEmployee = client.GetEmployee(item.value);
+
+
                 client.Close();
                 for (int i = 0; i < arrEmployee.Length; i++)
                 {
                     eList.Add(arrEmployee[i]);
                 }
-
+                //eList.ToList<Employee>().Sort(new Nam);
                 labelNumberSchool.Text = "Tổng số trường: " + arrSchool.Length;
                 employeeBindingSource.DataSource = eList;
 
@@ -317,11 +331,11 @@ namespace GetDataGiaoDuc
             {
                 Item i = comboBoxSchoolStudent.SelectedItem as Item;
                 cProfile = client.GetClassProfile(i.value, 2017);
-                for(int j=0; j<cProfile.Length; j++)
-                Debug.Print(cProfile[j].ClassProfileId+"-------------"+cProfile[j].ClassName);
+                //for(int j=0; j<cProfile.Length; j++)
+                //Debug.Print(cProfile[j].ClassProfileId+"-------------"+cProfile[j].ClassName);
 
-                if (arrStudent != null)
-                {
+                //if (!listStudent.Any())
+              //  {
 
                     using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Excel workbook|*.xls" })
                     {
@@ -349,7 +363,7 @@ namespace GetDataGiaoDuc
                             ws.Cells[1, 10] = "Dân tộc";
 
                             int index = 1;
-                            foreach (PupilProfile pf in arrStudent)
+                            foreach (PupilProfile pf in listStudent)
                             {
                                 index++;
 
@@ -358,12 +372,12 @@ namespace GetDataGiaoDuc
                                 ws.Cells[index, 3] = pf.FullName;
                                 ws.Cells[index, 4] = pf.Genre;
                                 String classname = "";                        
-                                for (int j = 0; j < cProfile.Length; j++)
+                                for (int k = 0; k < cProfile.Length; k++)
 
-                                    if (pf.ClassID == cProfile[j].ClassProfileId)
+                                    if (pf.ClassID == cProfile[k].ClassProfileId)
                                     {
-                                        classname = cProfile[j].ClassName;
-                                        Debug.Print("Tìm được tên lớp: " + classname);
+                                        classname = cProfile[k].ClassName;
+                                        //Debug.Print("Tìm được tên lớp: " + classname);
                                         break;
                                         //else ws.Cells[index, 7] = "Looix";
                                     }
@@ -376,14 +390,20 @@ namespace GetDataGiaoDuc
                                 
 
                             }
+                            
                             //Lưu file
-                            ws.SaveAs(fileName, XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing, true, false, XlSaveAsAccessMode.xlNoChange, XlSaveConflictResolution.xlLocalSessionChanges, Type.Missing);
-                            excel.Quit();
+                           // Thread th = new Thread( ()=>{
+                                ws.SaveAs(fileName, XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing, true, false, XlSaveAsAccessMode.xlNoChange, XlSaveConflictResolution.xlLocalSessionChanges, Type.Missing);
+                                excel.Quit();
+                          //  });
+                           // th.Start();
+                          //  if(th.IsAlive == false) { MessageBox.Show("Xuất danh sách học sinh thành công", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                            
                         }
                     }
 
-                }
-                else MessageBox.Show("Danh sách trường hiện tại đang trống, vui lòng lấy danh sách từ cổng thông tin", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+              //  }
+              //  else MessageBox.Show("Danh sách trường hiện tại đang trống, vui lòng lấy danh sách từ cổng thông tin", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
              }
             catch(Exception es)

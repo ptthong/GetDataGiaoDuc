@@ -138,16 +138,6 @@
             this.btnExportTeacherExcel = new System.Windows.Forms.Button();
             this.tabPageStudent = new System.Windows.Forms.TabPage();
             this.dataGridViewStudent = new System.Windows.Forms.DataGridView();
-            this.pupilProfileBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.labelSumStudent = new System.Windows.Forms.Label();
-            this.btnExportStudent = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBoxDistinctStudent = new System.Windows.Forms.ComboBox();
-            this.btnGetDataStudent = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBoxSchoolStudent = new System.Windows.Forms.ComboBox();
-            this.tabPageMark = new System.Windows.Forms.TabPage();
             this.orderIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pupilCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -158,6 +148,16 @@
             this.areaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ethnicDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.provinceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pupilProfileBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.labelSumStudent = new System.Windows.Forms.Label();
+            this.btnExportStudent = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBoxDistinctStudent = new System.Windows.Forms.ComboBox();
+            this.btnGetDataStudent = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBoxSchoolStudent = new System.Windows.Forms.ComboBox();
+            this.tabPageMark = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPageSchool.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchool)).BeginInit();
@@ -181,21 +181,21 @@
             this.tabControl1.Controls.Add(this.tabPageMark);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1692, 1053);
+            this.tabControl1.Size = new System.Drawing.Size(2197, 843);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPageSchool
             // 
             this.tabPageSchool.Controls.Add(this.dataGridViewSchool);
             this.tabPageSchool.Controls.Add(this.panel1);
-            this.tabPageSchool.Location = new System.Drawing.Point(4, 40);
-            this.tabPageSchool.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tabPageSchool.Location = new System.Drawing.Point(8, 39);
+            this.tabPageSchool.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabPageSchool.Name = "tabPageSchool";
-            this.tabPageSchool.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.tabPageSchool.Size = new System.Drawing.Size(1908, 1009);
+            this.tabPageSchool.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageSchool.Size = new System.Drawing.Size(1315, 796);
             this.tabPageSchool.TabIndex = 0;
             this.tabPageSchool.Text = "Danh sách các trường toàn tỉnh";
             this.tabPageSchool.UseVisualStyleBackColor = true;
@@ -229,10 +229,10 @@
             this.websiteDataGridViewTextBoxColumn});
             this.dataGridViewSchool.DataSource = this.schoolProfileBindingSource;
             this.dataGridViewSchool.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewSchool.Location = new System.Drawing.Point(8, 90);
-            this.dataGridViewSchool.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.dataGridViewSchool.Location = new System.Drawing.Point(6, 73);
+            this.dataGridViewSchool.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dataGridViewSchool.Name = "dataGridViewSchool";
-            this.dataGridViewSchool.Size = new System.Drawing.Size(1892, 912);
+            this.dataGridViewSchool.Size = new System.Drawing.Size(1303, 717);
             this.dataGridViewSchool.TabIndex = 6;
             // 
             // schoolCodeDataGridViewTextBoxColumn
@@ -377,30 +377,30 @@
             this.panel1.Controls.Add(this.btnExportShoolExcel);
             this.panel1.Controls.Add(this.btnGetSchool);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(8, 7);
-            this.panel1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.panel1.Location = new System.Drawing.Point(6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1892, 83);
+            this.panel1.Size = new System.Drawing.Size(1303, 67);
             this.panel1.TabIndex = 5;
             // 
             // labelNumberSchool
             // 
             this.labelNumberSchool.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.labelNumberSchool.AutoSize = true;
-            this.labelNumberSchool.Location = new System.Drawing.Point(8, 24);
-            this.labelNumberSchool.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.labelNumberSchool.Location = new System.Drawing.Point(6, 19);
+            this.labelNumberSchool.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelNumberSchool.Name = "labelNumberSchool";
-            this.labelNumberSchool.Size = new System.Drawing.Size(211, 31);
+            this.labelNumberSchool.Size = new System.Drawing.Size(169, 25);
             this.labelNumberSchool.TabIndex = 4;
             this.labelNumberSchool.Text = "Tổng số trường: ";
             // 
             // btnExportShoolExcel
             // 
             this.btnExportShoolExcel.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnExportShoolExcel.Location = new System.Drawing.Point(1636, 12);
-            this.btnExportShoolExcel.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnExportShoolExcel.Location = new System.Drawing.Point(1111, 10);
+            this.btnExportShoolExcel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnExportShoolExcel.Name = "btnExportShoolExcel";
-            this.btnExportShoolExcel.Size = new System.Drawing.Size(248, 55);
+            this.btnExportShoolExcel.Size = new System.Drawing.Size(186, 44);
             this.btnExportShoolExcel.TabIndex = 1;
             this.btnExportShoolExcel.Text = "Xuất ra Excel";
             this.btnExportShoolExcel.UseVisualStyleBackColor = true;
@@ -409,10 +409,10 @@
             // btnGetSchool
             // 
             this.btnGetSchool.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnGetSchool.Location = new System.Drawing.Point(1375, 12);
-            this.btnGetSchool.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnGetSchool.Location = new System.Drawing.Point(915, 10);
+            this.btnGetSchool.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnGetSchool.Name = "btnGetSchool";
-            this.btnGetSchool.Size = new System.Drawing.Size(245, 55);
+            this.btnGetSchool.Size = new System.Drawing.Size(184, 44);
             this.btnGetSchool.TabIndex = 2;
             this.btnGetSchool.Text = "Lấy danh sách";
             this.btnGetSchool.UseVisualStyleBackColor = true;
@@ -423,11 +423,11 @@
             this.tabPageTeacher.Controls.Add(this.dataGridViewEmployee);
             this.tabPageTeacher.Controls.Add(this.panel2);
             this.tabPageTeacher.Controls.Add(this.btnExportTeacherExcel);
-            this.tabPageTeacher.Location = new System.Drawing.Point(4, 40);
-            this.tabPageTeacher.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tabPageTeacher.Location = new System.Drawing.Point(8, 39);
+            this.tabPageTeacher.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabPageTeacher.Name = "tabPageTeacher";
-            this.tabPageTeacher.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.tabPageTeacher.Size = new System.Drawing.Size(2749, 1265);
+            this.tabPageTeacher.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageTeacher.Size = new System.Drawing.Size(1315, 796);
             this.tabPageTeacher.TabIndex = 1;
             this.tabPageTeacher.Text = "Danh sách giáo viên";
             this.tabPageTeacher.UseVisualStyleBackColor = true;
@@ -505,10 +505,10 @@
             this.youthLeagueJoinedPlaceDataGridViewTextBoxColumn1});
             this.dataGridViewEmployee.DataSource = this.employeeBindingSource;
             this.dataGridViewEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewEmployee.Location = new System.Drawing.Point(8, 90);
-            this.dataGridViewEmployee.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.dataGridViewEmployee.Location = new System.Drawing.Point(6, 73);
+            this.dataGridViewEmployee.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dataGridViewEmployee.Name = "dataGridViewEmployee";
-            this.dataGridViewEmployee.Size = new System.Drawing.Size(2733, 1168);
+            this.dataGridViewEmployee.Size = new System.Drawing.Size(1303, 717);
             this.dataGridViewEmployee.TabIndex = 7;
             // 
             // aliasDataGridViewTextBoxColumn
@@ -919,20 +919,20 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.comboBoxSchoolEmployee);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(8, 7);
-            this.panel2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.panel2.Location = new System.Drawing.Point(6, 6);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2733, 83);
+            this.panel2.Size = new System.Drawing.Size(1303, 67);
             this.panel2.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 24);
-            this.label3.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label3.Location = new System.Drawing.Point(10, 19);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(173, 31);
+            this.label3.Size = new System.Drawing.Size(137, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Chọn Huyện:";
             // 
@@ -940,20 +940,20 @@
             // 
             this.comboBoxDistinctEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboBoxDistinctEmployee.FormattingEnabled = true;
-            this.comboBoxDistinctEmployee.Location = new System.Drawing.Point(213, 17);
-            this.comboBoxDistinctEmployee.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.comboBoxDistinctEmployee.Location = new System.Drawing.Point(160, 14);
+            this.comboBoxDistinctEmployee.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.comboBoxDistinctEmployee.Name = "comboBoxDistinctEmployee";
-            this.comboBoxDistinctEmployee.Size = new System.Drawing.Size(407, 39);
+            this.comboBoxDistinctEmployee.Size = new System.Drawing.Size(306, 33);
             this.comboBoxDistinctEmployee.TabIndex = 3;
             this.comboBoxDistinctEmployee.SelectedIndexChanged += new System.EventHandler(this.comboBoxDistinctEmployee_SelectedIndexChanged);
             // 
             // btnGetDataEmployee
             // 
             this.btnGetDataEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnGetDataEmployee.Location = new System.Drawing.Point(1957, 17);
-            this.btnGetDataEmployee.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnGetDataEmployee.Location = new System.Drawing.Point(1468, 14);
+            this.btnGetDataEmployee.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnGetDataEmployee.Name = "btnGetDataEmployee";
-            this.btnGetDataEmployee.Size = new System.Drawing.Size(200, 55);
+            this.btnGetDataEmployee.Size = new System.Drawing.Size(150, 44);
             this.btnGetDataEmployee.TabIndex = 4;
             this.btnGetDataEmployee.Text = "Lấy dữ liệu";
             this.btnGetDataEmployee.UseVisualStyleBackColor = true;
@@ -963,10 +963,10 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(643, 24);
-            this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label2.Location = new System.Drawing.Point(482, 19);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 31);
+            this.label2.Size = new System.Drawing.Size(136, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Chọn trường:";
             // 
@@ -974,18 +974,18 @@
             // 
             this.comboBoxSchoolEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboBoxSchoolEmployee.FormattingEnabled = true;
-            this.comboBoxSchoolEmployee.Location = new System.Drawing.Point(840, 17);
-            this.comboBoxSchoolEmployee.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.comboBoxSchoolEmployee.Location = new System.Drawing.Point(630, 14);
+            this.comboBoxSchoolEmployee.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.comboBoxSchoolEmployee.Name = "comboBoxSchoolEmployee";
-            this.comboBoxSchoolEmployee.Size = new System.Drawing.Size(1095, 39);
+            this.comboBoxSchoolEmployee.Size = new System.Drawing.Size(822, 33);
             this.comboBoxSchoolEmployee.TabIndex = 1;
             // 
             // btnExportTeacherExcel
             // 
-            this.btnExportTeacherExcel.Location = new System.Drawing.Point(2773, 7);
-            this.btnExportTeacherExcel.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnExportTeacherExcel.Location = new System.Drawing.Point(2080, 6);
+            this.btnExportTeacherExcel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnExportTeacherExcel.Name = "btnExportTeacherExcel";
-            this.btnExportTeacherExcel.Size = new System.Drawing.Size(232, 55);
+            this.btnExportTeacherExcel.Size = new System.Drawing.Size(174, 44);
             this.btnExportTeacherExcel.TabIndex = 5;
             this.btnExportTeacherExcel.Text = "Xuất ra Excel";
             this.btnExportTeacherExcel.UseVisualStyleBackColor = true;
@@ -994,11 +994,11 @@
             // 
             this.tabPageStudent.Controls.Add(this.dataGridViewStudent);
             this.tabPageStudent.Controls.Add(this.panel3);
-            this.tabPageStudent.Location = new System.Drawing.Point(4, 40);
-            this.tabPageStudent.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tabPageStudent.Location = new System.Drawing.Point(8, 39);
+            this.tabPageStudent.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabPageStudent.Name = "tabPageStudent";
-            this.tabPageStudent.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.tabPageStudent.Size = new System.Drawing.Size(1684, 1009);
+            this.tabPageStudent.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageStudent.Size = new System.Drawing.Size(2181, 796);
             this.tabPageStudent.TabIndex = 2;
             this.tabPageStudent.Text = "Danh sách học sinh";
             this.tabPageStudent.UseVisualStyleBackColor = true;
@@ -1020,122 +1020,12 @@
             this.provinceDataGridViewTextBoxColumn1});
             this.dataGridViewStudent.DataSource = this.pupilProfileBindingSource;
             this.dataGridViewStudent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewStudent.Location = new System.Drawing.Point(8, 90);
-            this.dataGridViewStudent.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.dataGridViewStudent.Location = new System.Drawing.Point(6, 73);
+            this.dataGridViewStudent.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dataGridViewStudent.Name = "dataGridViewStudent";
-            this.dataGridViewStudent.Size = new System.Drawing.Size(1668, 912);
+            this.dataGridViewStudent.Size = new System.Drawing.Size(2169, 717);
             this.dataGridViewStudent.TabIndex = 8;
             this.dataGridViewStudent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewStudent_CellContentClick);
-            // 
-            // pupilProfileBindingSource
-            // 
-            this.pupilProfileBindingSource.DataSource = typeof(GetDataGiaoDuc.APISMAS.PupilProfile);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.labelSumStudent);
-            this.panel3.Controls.Add(this.btnExportStudent);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.comboBoxDistinctStudent);
-            this.panel3.Controls.Add(this.btnGetDataStudent);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.comboBoxSchoolStudent);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(8, 7);
-            this.panel3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1668, 83);
-            this.panel3.TabIndex = 7;
-            // 
-            // labelSumStudent
-            // 
-            this.labelSumStudent.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelSumStudent.AutoSize = true;
-            this.labelSumStudent.Location = new System.Drawing.Point(1121, 29);
-            this.labelSumStudent.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.labelSumStudent.Name = "labelSumStudent";
-            this.labelSumStudent.Size = new System.Drawing.Size(235, 31);
-            this.labelSumStudent.TabIndex = 6;
-            this.labelSumStudent.Text = "Tổng số học sinh: ";
-            // 
-            // btnExportStudent
-            // 
-            this.btnExportStudent.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnExportStudent.Location = new System.Drawing.Point(1455, 17);
-            this.btnExportStudent.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.btnExportStudent.Name = "btnExportStudent";
-            this.btnExportStudent.Size = new System.Drawing.Size(200, 55);
-            this.btnExportStudent.TabIndex = 5;
-            this.btnExportStudent.Text = "Xuất Excel";
-            this.btnExportStudent.UseVisualStyleBackColor = true;
-            this.btnExportStudent.Click += new System.EventHandler(this.btnExportStudent_Click);
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 24);
-            this.label4.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(173, 31);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Chọn Huyện:";
-            // 
-            // comboBoxDistinctStudent
-            // 
-            this.comboBoxDistinctStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBoxDistinctStudent.FormattingEnabled = true;
-            this.comboBoxDistinctStudent.Location = new System.Drawing.Point(213, 17);
-            this.comboBoxDistinctStudent.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.comboBoxDistinctStudent.Name = "comboBoxDistinctStudent";
-            this.comboBoxDistinctStudent.Size = new System.Drawing.Size(407, 39);
-            this.comboBoxDistinctStudent.TabIndex = 3;
-            this.comboBoxDistinctStudent.SelectedIndexChanged += new System.EventHandler(this.comboBoxDistinctStudent_SelectedIndexChanged);
-            // 
-            // btnGetDataStudent
-            // 
-            this.btnGetDataStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnGetDataStudent.Location = new System.Drawing.Point(1957, 17);
-            this.btnGetDataStudent.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.btnGetDataStudent.Name = "btnGetDataStudent";
-            this.btnGetDataStudent.Size = new System.Drawing.Size(200, 55);
-            this.btnGetDataStudent.TabIndex = 4;
-            this.btnGetDataStudent.Text = "Lấy dữ liệu";
-            this.btnGetDataStudent.UseVisualStyleBackColor = true;
-            this.btnGetDataStudent.Click += new System.EventHandler(this.btnGetDataStudent_Click);
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(643, 24);
-            this.label5.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(171, 31);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Chọn trường:";
-            // 
-            // comboBoxSchoolStudent
-            // 
-            this.comboBoxSchoolStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBoxSchoolStudent.FormattingEnabled = true;
-            this.comboBoxSchoolStudent.Location = new System.Drawing.Point(840, 17);
-            this.comboBoxSchoolStudent.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.comboBoxSchoolStudent.Name = "comboBoxSchoolStudent";
-            this.comboBoxSchoolStudent.Size = new System.Drawing.Size(1095, 39);
-            this.comboBoxSchoolStudent.TabIndex = 1;
-            this.comboBoxSchoolStudent.SelectedIndexChanged += new System.EventHandler(this.comboBoxSchoolStudent_SelectedIndexChanged);
-            // 
-            // tabPageMark
-            // 
-            this.tabPageMark.Location = new System.Drawing.Point(4, 40);
-            this.tabPageMark.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.tabPageMark.Name = "tabPageMark";
-            this.tabPageMark.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.tabPageMark.Size = new System.Drawing.Size(2749, 1265);
-            this.tabPageMark.TabIndex = 3;
-            this.tabPageMark.Text = "Lấy điểm theo trường";
-            this.tabPageMark.UseVisualStyleBackColor = true;
             // 
             // orderIdDataGridViewTextBoxColumn
             // 
@@ -1197,14 +1087,124 @@
             this.provinceDataGridViewTextBoxColumn1.HeaderText = "Tỉnh thành";
             this.provinceDataGridViewTextBoxColumn1.Name = "provinceDataGridViewTextBoxColumn1";
             // 
+            // pupilProfileBindingSource
+            // 
+            this.pupilProfileBindingSource.DataSource = typeof(GetDataGiaoDuc.APISMAS.PupilProfile);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.labelSumStudent);
+            this.panel3.Controls.Add(this.btnExportStudent);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.comboBoxDistinctStudent);
+            this.panel3.Controls.Add(this.btnGetDataStudent);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.comboBoxSchoolStudent);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(6, 6);
+            this.panel3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(2169, 67);
+            this.panel3.TabIndex = 7;
+            // 
+            // labelSumStudent
+            // 
+            this.labelSumStudent.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelSumStudent.AutoSize = true;
+            this.labelSumStudent.Location = new System.Drawing.Point(1759, 23);
+            this.labelSumStudent.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelSumStudent.Name = "labelSumStudent";
+            this.labelSumStudent.Size = new System.Drawing.Size(189, 25);
+            this.labelSumStudent.TabIndex = 6;
+            this.labelSumStudent.Text = "Tổng số học sinh: ";
+            // 
+            // btnExportStudent
+            // 
+            this.btnExportStudent.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnExportStudent.Location = new System.Drawing.Point(2010, 14);
+            this.btnExportStudent.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnExportStudent.Name = "btnExportStudent";
+            this.btnExportStudent.Size = new System.Drawing.Size(150, 44);
+            this.btnExportStudent.TabIndex = 5;
+            this.btnExportStudent.Text = "Xuất Excel";
+            this.btnExportStudent.UseVisualStyleBackColor = true;
+            this.btnExportStudent.Click += new System.EventHandler(this.btnExportStudent_Click);
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(10, 19);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(137, 25);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Chọn Huyện:";
+            // 
+            // comboBoxDistinctStudent
+            // 
+            this.comboBoxDistinctStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxDistinctStudent.FormattingEnabled = true;
+            this.comboBoxDistinctStudent.Location = new System.Drawing.Point(160, 14);
+            this.comboBoxDistinctStudent.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.comboBoxDistinctStudent.Name = "comboBoxDistinctStudent";
+            this.comboBoxDistinctStudent.Size = new System.Drawing.Size(306, 33);
+            this.comboBoxDistinctStudent.TabIndex = 3;
+            this.comboBoxDistinctStudent.SelectedIndexChanged += new System.EventHandler(this.comboBoxDistinctStudent_SelectedIndexChanged);
+            // 
+            // btnGetDataStudent
+            // 
+            this.btnGetDataStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnGetDataStudent.Location = new System.Drawing.Point(1468, 14);
+            this.btnGetDataStudent.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnGetDataStudent.Name = "btnGetDataStudent";
+            this.btnGetDataStudent.Size = new System.Drawing.Size(150, 44);
+            this.btnGetDataStudent.TabIndex = 4;
+            this.btnGetDataStudent.Text = "Lấy dữ liệu";
+            this.btnGetDataStudent.UseVisualStyleBackColor = true;
+            this.btnGetDataStudent.Click += new System.EventHandler(this.btnGetDataStudent_Click);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(482, 19);
+            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(136, 25);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Chọn trường:";
+            // 
+            // comboBoxSchoolStudent
+            // 
+            this.comboBoxSchoolStudent.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxSchoolStudent.FormattingEnabled = true;
+            this.comboBoxSchoolStudent.Location = new System.Drawing.Point(630, 14);
+            this.comboBoxSchoolStudent.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.comboBoxSchoolStudent.Name = "comboBoxSchoolStudent";
+            this.comboBoxSchoolStudent.Size = new System.Drawing.Size(822, 33);
+            this.comboBoxSchoolStudent.TabIndex = 1;
+            this.comboBoxSchoolStudent.SelectedIndexChanged += new System.EventHandler(this.comboBoxSchoolStudent_SelectedIndexChanged);
+            // 
+            // tabPageMark
+            // 
+            this.tabPageMark.Location = new System.Drawing.Point(8, 39);
+            this.tabPageMark.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageMark.Name = "tabPageMark";
+            this.tabPageMark.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageMark.Size = new System.Drawing.Size(1315, 796);
+            this.tabPageMark.TabIndex = 3;
+            this.tabPageMark.Text = "Lấy điểm theo trường";
+            this.tabPageMark.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1692, 1053);
+            this.ClientSize = new System.Drawing.Size(2197, 843);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SMAS API Tool v1";
